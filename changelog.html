@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Changelog — Neato Echo</title>
+    <meta name="description" content="Every Neato Echo build, with release notes and installers." />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="icon" href="assets/echo-mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="sr-only" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="container">
+        <a class="wordmark" href="index.html" aria-label="Neato Echo home">
+          <img src="assets/icon-64.png" alt="" width="64" height="64" />
+          <span>Neato<span class="orange">_</span>Echo</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#story">How it works</a></li>
+          <li><a href="index.html#privacy">Privacy</a></li>
+          <li><a href="index.html#install">Install</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="changelog.html" aria-current="page">Changelog</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-cta btn-sm" data-download href="https://github.com/markhiltonapps/neato-echo/releases">
+            <span data-download-label>Download</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-mobile" aria-label="Menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="nav-mobile" id="nav-mobile" data-open="false" aria-label="Mobile">
+        <ul>
+          <li><a href="index.html#story">How it works</a></li>
+          <li><a href="index.html#privacy">Privacy</a></li>
+          <li><a href="index.html#install">Install</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="bg-starburst" style="padding-bottom: 3rem">
+        <div class="container section-head">
+          <h1>Changelog</h1>
+          <p>
+            Every build of Neato Echo, newest first. Notes and installers are pulled live from
+            the project's GitHub releases, so this page is never out of date.
+          </p>
+        </div>
+      </section>
+
+      <section class="band" style="padding-top: 3rem">
+        <div class="container">
+          <div class="releases" data-releases></div>
+          <p class="release-status" data-release-status>Loading releases…</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer band-brown bg-starburst">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="wordmark" href="index.html" style="color: hsl(50 33% 95%)">
+              <img src="assets/icon-64.png" alt="" width="64" height="64" />
+              <span>Neato<span class="orange">_</span>Echo</span>
+            </a>
+            <p class="footer-tag" style="margin-top: 1rem">The future you were promised, on your own PC.</p>
+            <p class="muted" style="margin-top: 0.75rem; max-width: 34rem">
+              A <a href="https://www.neatoventures.com" rel="noopener">Neato Ventures</a> product,
+              built in Houston, TX on the open-source
+              <a href="https://github.com/OpenWhispr/openwhispr" rel="noopener">OpenWhispr</a> project (MIT).
+            </p>
+          </div>
+          <div>
+            <h3>Product</h3>
+            <ul>
+              <li><a data-download href="https://github.com/markhiltonapps/neato-echo/releases">Download</a></li>
+              <li><a href="changelog.html">Changelog</a></li>
+              <li><a href="index.html#privacy">Privacy</a></li>
+              <li><a href="index.html#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Neato Ventures</h3>
+            <ul>
+              <li><a href="https://www.neatoventures.com" rel="noopener">neatoventures.com</a></li>
+              <li><a href="https://github.com/markhiltonapps/neato-echo" rel="noopener">Source on GitHub</a></li>
+              <li><a href="mailto:hello@neatoventures.com">hello@neatoventures.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Neato Ventures. Neato Echo is licensed under MIT.</span>
+          <span class="micro">Made with an atom and a microphone</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>

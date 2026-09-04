@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Neato Echo — Voice dictation and meeting notes that never leave your PC</title>
+    <meta
+      name="description"
+      content="Neato Echo is a Windows app for voice dictation, meeting capture, and AI summaries that runs entirely on your machine. No account, no cloud, no subscription."
+    />
+    <meta property="og:title" content="Neato Echo" />
+    <meta
+      property="og:description"
+      content="Dictate anywhere. Capture every meeting. Nothing leaves your PC."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/icon-512.png" />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="icon" href="assets/echo-mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="sr-only" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="container">
+        <a class="wordmark" href="index.html" aria-label="Neato Echo home">
+          <img src="assets/icon-64.png" alt="" width="64" height="64" />
+          <span>Neato<span class="orange">_</span>Echo</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#story">How it works</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#install">Install</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-cta btn-sm" data-download href="https://github.com/markhiltonapps/neato-echo/releases">
+            <span data-download-label>Download</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-mobile" aria-label="Menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="nav-mobile" id="nav-mobile" data-open="false" aria-label="Mobile">
+        <ul>
+          <li><a href="#story">How it works</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#install">Install</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero bg-starburst">
+        <div class="hero-ring" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>
+              <span>Dictate anywhere.</span>
+              <span>Capture every meeting.</span>
+            </h1>
+            <p class="hero-tagline">Nothing leaves your PC.</p>
+            <p class="hero-lede">
+              Neato Echo turns your voice into text in any app, records the meetings you're in,
+              and writes the summary, all on your own Windows machine. No account. No cloud. No
+              monthly fee.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-cta" data-download href="https://github.com/markhiltonapps/neato-echo/releases">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" />
+                </svg>
+                <span data-download-label>Download for Windows</span>
+              </a>
+              <a class="btn btn-hero-outline" href="#story">See how it works</a>
+            </div>
+            <p class="hero-meta micro">
+              <span>Windows 10 / 11, 64-bit</span>
+              <span>Works offline after setup</span>
+              <span>Open source, MIT</span>
+            </p>
+          </div>
+
+          <figure class="crt">
+            <div class="crt-bar" aria-hidden="true">
+              <i></i><i></i><i></i>
+              <span class="micro">Neato Echo · Home</span>
+            </div>
+            <div class="crt-screen scanlines">
+              <img src="assets/shots/hero.png" alt="Neato Echo's main window showing today's dictations and notes" />
+              <div class="crt-empty">
+                <img class="wave" src="assets/echo-mark.svg" alt="" />
+                <span class="micro">Screenshot coming soon</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- STORY 1: DICTATE -->
+      <section id="story" class="band">
+        <div class="container story reveal">
+          <div class="story-copy">
+            <h2>Press a key. Talk. Your words land where the cursor is.</h2>
+            <p>
+              Hold the dictation key, <span class="hotkey">Ctrl</span> + <span class="hotkey">Win</span> out of the box, in any app,
+              from email to a code editor to a CRM field, and speak. Echo transcribes on your PC with NVIDIA's Parakeet model and
+              pastes the text the moment you let go.
+            </p>
+            <ul class="story-list">
+              <li>
+                <strong>On-device speech to text</strong>
+                <span>No round trip to a server, so short dictations come back in under a second on an ordinary laptop CPU.</span>
+              </li>
+              <li>
+                <strong>Your vocabulary, kept</strong>
+                <span>A custom dictionary teaches Echo the names, products, and jargon you use.</span>
+              </li>
+              <li>
+                <strong>Cleanup only when you want it</strong>
+                <span>AI cleanup is off by default for speed. Turn it on for polished prose from a local language model.</span>
+              </li>
+            </ul>
+          </div>
+          <figure class="crt">
+            <div class="crt-bar" aria-hidden="true">
+              <i></i><i></i><i></i>
+              <span class="micro">Dictation</span>
+            </div>
+            <div class="crt-screen scanlines">
+              <img src="assets/shots/dictation.png" alt="Echo's dictation pill listening, with text appearing in another app" />
+              <div class="crt-empty">
+                <img class="wave" src="assets/echo-mark.svg" alt="" />
+                <span class="micro">Screenshot coming soon</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- STORY 2: MEETINGS -->
+      <section>
+        <div class="container story flip reveal">
+          <div class="story-copy">
+            <h2>A meeting starts. Echo notices and offers to take notes.</h2>
+            <p>
+              Echo listens for meeting audio and watches for Zoom, Microsoft Teams, and Webex.
+              When a call begins, a small card asks whether to take notes. One click, and it
+              records both sides, the other people through your speakers and you through your
+              mic, with a live transcript and speaker labels.
+            </p>
+            <ul class="story-list">
+              <li>
+                <strong>Browser meetings too</strong>
+                <span>Google Meet and other web calls are caught by the audio detector.</span>
+              </li>
+              <li>
+                <strong>Stops on its own</strong>
+                <span>When the call ends and the room goes quiet, the recording closes and the note is saved.</span>
+              </li>
+              <li>
+                <strong>Calendar-aware</strong>
+                <span>Connect Google or Microsoft calendars and the note takes the meeting's title.</span>
+              </li>
+            </ul>
+          </div>
+          <figure class="crt">
+            <div class="crt-bar" aria-hidden="true">
+              <i></i><i></i><i></i>
+              <span class="micro">Meeting detected</span>
+            </div>
+            <div class="crt-screen scanlines">
+              <img src="assets/shots/meeting.png" alt="The meeting-detected card offering to take notes, and a live transcript" />
+              <div class="crt-empty">
+                <img class="wave" src="assets/echo-mark.svg" alt="" />
+                <span class="micro">Screenshot coming soon</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- STORY 3: SUMMARIES -->
+      <section class="band">
+        <div class="container story reveal">
+          <div class="story-copy">
+            <h2>The call ends. Pick a summary. Done.</h2>
+            <p>
+              As soon as a recording stops, Echo asks which kind of summary you want. Five are
+              built in, each with its own structure, and every one is editable. Add your own for
+              the meetings only your team has.
+            </p>
+            <div class="stamps" aria-label="Built-in summary presets">
+              <span class="stamp">Team Meeting</span>
+              <span class="stamp">Interview</span>
+              <span class="stamp">Sales Call</span>
+              <span class="stamp">One-on-one</span>
+              <span class="stamp">Customer Support</span>
+              <span class="stamp custom">+ Your own</span>
+            </div>
+            <ul class="story-list">
+              <li>
+                <strong>Grounded, not invented</strong>
+                <span>Presets only use what was said. Missing details are flagged, never filled in.</span>
+              </li>
+              <li>
+                <strong>Runs locally</strong>
+                <span>Summaries come from a language model on your PC, downloaded once during setup.</span>
+              </li>
+            </ul>
+          </div>
+          <figure class="crt">
+            <div class="crt-bar" aria-hidden="true">
+              <i></i><i></i><i></i>
+              <span class="micro">Summarize this recording?</span>
+            </div>
+            <div class="crt-screen scanlines">
+              <img src="assets/shots/summary.png" alt="The summary picker listing the five built-in presets" />
+              <div class="crt-empty">
+                <img class="wave" src="assets/echo-mark.svg" alt="" />
+                <span class="micro">Screenshot coming soon</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- PRIVACY LEDGER -->
+      <section id="privacy">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>What stays on your PC. What leaves it.</h2>
+            <p>
+              Privacy here is not a policy page. It is how the software is built. Here is the
+              ledger.
+            </p>
+          </div>
+          <div class="ledger stack-3 reveal">
+            <div class="plate googie-card">
+              <h3>Stays on your PC</h3>
+              <dl>
+                <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6" /></svg>Your voice</dt>
+                <dd>Audio is processed by models running on your machine and is never uploaded.</dd>
+                <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6" /></svg>Transcripts and notes</dt>
+                <dd>Saved in a local database in your Windows profile. Export or delete them whenever you like.</dd>
+                <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6" /></svg>Summaries</dt>
+                <dd>Generated by a local language model. The prompt and the result never leave the PC.</dd>
+                <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6" /></svg>Your identity</dt>
+                <dd>There is no account to create and no sign-in. Echo does not know who you are.</dd>
+              </dl>
+            </div>
+            <div class="plate plate-out googie-card">
+              <h3>Leaves your PC</h3>
+              <dl>
+                <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>Nothing, by default</dt>
+                <dd>Echo makes no calls to Neato Ventures. There is no telemetry and no usage reporting.</dd>
+                <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg>Model downloads, once</dt>
+                <dd>The speech and language models are fetched from their public sources during setup. After that, Echo works offline.</dd>
+                <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg>Only if you choose it</dt>
+                <dd>You can plug in your own cloud provider key for transcription or summaries. That is your call, off by default, and clearly labeled in Settings.</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INSTALL -->
+      <section id="install" class="band bg-starburst">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Install in four steps</h2>
+            <p>The current build is unsigned, so Windows shows one extra confirmation the first time.</p>
+          </div>
+          <ol class="steps stack-3 reveal">
+            <li class="step googie-card">
+              <span class="step-num" aria-hidden="true">1</span>
+              <h3>Download the installer</h3>
+              <p>Grab <span data-version>the latest</span> build with the button above. It is a standard Windows setup file.</p>
+            </li>
+            <li class="step googie-card">
+              <span class="step-num" aria-hidden="true">2</span>
+              <h3>Allow it through SmartScreen</h3>
+              <p>If Windows says "protected your PC", choose <em>More info</em>, then <em>Run anyway</em>. This goes away once the build is code-signed.</p>
+            </li>
+            <li class="step googie-card">
+              <span class="step-num" aria-hidden="true">3</span>
+              <h3>Let it fetch the models</h3>
+              <p>First run downloads the speech model (about 700 MB) and, if you enable summaries, a language model. Grab a coffee.</p>
+            </li>
+            <li class="step googie-card">
+              <span class="step-num" aria-hidden="true">4</span>
+              <h3>Hold Ctrl+Win and talk</h3>
+              <p>Change the key in Settings if you prefer another. Meeting detection is on from the start.</p>
+            </li>
+          </ol>
+          <p class="requirements micro reveal">
+            <span>Windows 10 version 2004 or later, or Windows 11</span>
+            <span>64-bit PC</span>
+            <span>About 2 GB free for models</span>
+            <span>No GPU required</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- PRICING TEASER -->
+      <section id="pricing">
+        <div class="container">
+          <div class="teaser googie-card reveal">
+            <span class="ribbon">Lifetime plan · coming</span>
+            <h2>Pay once. Because there is nothing to rent.</h2>
+            <p>
+              Cloud dictation tools charge every month to run your audio on their servers. Echo
+              runs on yours, so a one-time lifetime license is the plan we are building toward.
+              Pricing is not final yet.
+            </p>
+            <a class="btn btn-outline" href="mailto:hello@neatoventures.com?subject=Neato%20Echo%20lifetime%20plan">
+              Tell me when it's ready
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHANGELOG (latest) -->
+      <section id="changelog" class="band">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Latest builds</h2>
+            <p>Release notes come straight from the project's GitHub releases.</p>
+          </div>
+          <div class="releases stack-3" data-releases data-limit="3"></div>
+          <p class="release-status stack-3" data-release-status>Loading releases…</p>
+          <p class="section-head stack-3">
+            <a class="btn btn-hero-outline" href="changelog.html">Full changelog</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer band-brown bg-starburst">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="wordmark" href="index.html" style="color: hsl(50 33% 95%)">
+              <img src="assets/icon-64.png" alt="" width="64" height="64" />
+              <span>Neato<span class="orange">_</span>Echo</span>
+            </a>
+            <p class="footer-tag" style="margin-top: 1rem">The future you were promised, on your own PC.</p>
+            <p class="muted" style="margin-top: 0.75rem; max-width: 34rem">
+              A <a href="https://www.neatoventures.com" rel="noopener">Neato Ventures</a> product,
+              built in Houston, TX on the open-source
+              <a href="https://github.com/OpenWhispr/openwhispr" rel="noopener">OpenWhispr</a> project (MIT).
+            </p>
+          </div>
+          <div>
+            <h3>Product</h3>
+            <ul>
+              <li><a data-download href="https://github.com/markhiltonapps/neato-echo/releases">Download</a></li>
+              <li><a href="changelog.html">Changelog</a></li>
+              <li><a href="#privacy">Privacy</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Neato Ventures</h3>
+            <ul>
+              <li><a href="https://www.neatoventures.com" rel="noopener">neatoventures.com</a></li>
+              <li><a href="https://github.com/markhiltonapps/neato-echo" rel="noopener">Source on GitHub</a></li>
+              <li><a href="mailto:hello@neatoventures.com">hello@neatoventures.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Neato Ventures. Neato Echo is licensed under MIT.</span>
+          <span class="micro">Made with an atom and a microphone</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>

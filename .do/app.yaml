@@ -1,0 +1,17 @@
+# DigitalOcean App Platform spec for the Neato Echo website (static site).
+# Import this in the App Platform console, or run:
+#   doctl apps create --spec .do/app.yaml
+name: neato-echo-site
+region: nyc
+static_sites:
+  - name: site
+    github:
+      repo: markhiltonapps/neato-echo-site
+      branch: main
+      deploy_on_push: true
+    source_dir: /
+    output_dir: /
+    index_document: index.html
+    error_document: index.html
+    routes:
+      - path: /
