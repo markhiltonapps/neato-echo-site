@@ -1,5 +1,7 @@
 # Neato Echo website
 
+Live at https://coral-app-aex7i.ondigitalocean.app/ (DigitalOcean App Platform, redeploys on every push to `main`).
+
 Static marketing and download site for [Neato Echo](https://github.com/markhiltonapps/neato-echo), a Neato Ventures product.
 
 - `index.html` — landing page (hero, how it works, privacy ledger, install steps, pricing teaser, latest builds)

@@ -191,8 +191,6 @@
     document.querySelectorAll("[data-download]").forEach(function (btn) {
       if (installer) {
         btn.setAttribute("href", installer.browser_download_url);
-        var label = btn.querySelector("[data-download-label]");
-        if (label) label.textContent = "Download for Windows";
         var meta = btn.querySelector("[data-download-meta]");
         if (meta) {
           meta.textContent =
