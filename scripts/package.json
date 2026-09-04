@@ -5,7 +5,7 @@
   "main": "site.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:docs": "node scripts/build-docs.mjs"
+    "build:docs": "node build-docs.mjs"
   },
   "repository": {
     "type": "git",
