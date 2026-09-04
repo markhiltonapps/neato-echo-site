@@ -34,3 +34,7 @@ Any static server works, for example:
 ```bash
 python -m http.server 8765
 ```
+
+## Manual (docs)
+
+The manual lives in `docs-src/**.md` (Markdown with a few Mintlify-style components: `<Steps>`, `<Note>`, `<Warning>`, `<Tip>`, `<Accordion>`, `<Card>`, `<Tabs>`). `npm run build:docs` renders it into `docs/**.html` plus `docs/search-index.json`; the generated HTML is committed because the DigitalOcean app serves the repo as-is. Page order and grouping are set in `scripts/build-docs.mjs` (`NAV`). Add a page by writing the Markdown file and adding its slug to `NAV`, then rebuild and commit both.

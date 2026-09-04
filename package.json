@@ -1,0 +1,26 @@
+{
+  "name": "neato-echo-site",
+  "version": "1.0.0",
+  "description": "Live at https://echo.neatoventures.com/ (DigitalOcean App Platform, redeploys on every push to `main`; the app URL https://coral-app-aex7i.ondigitalocean.app/ also works).",
+  "main": "site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:docs": "node scripts/build-docs.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markhiltonapps/neato-echo-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/markhiltonapps/neato-echo-site/issues"
+  },
+  "homepage": "https://github.com/markhiltonapps/neato-echo-site#readme",
+  "private": "true",
+  "devDependencies": {
+    "marked": "^15.0.12"
+  }
+}

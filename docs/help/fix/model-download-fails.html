@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A model won't download — Neato Echo Manual</title>
+    <meta name="description" content="Downloads that fail, stall, or install incorrectly — and what each error message actually means." />
+    <link rel="canonical" href="https://echo.neatoventures.com/docs/help/fix/model-download-fails.html" />
+    <link rel="icon" href="/assets/favicon.ico" sizes="any" />
+    <link rel="icon" href="/assets/echo-mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/docs.css" />
+  </head>
+  <body class="docs">
+    <a class="sr-only" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="container">
+        <a class="wordmark" href="/" aria-label="Neato Echo home">
+          <img src="/assets/icon-64.png" alt="" width="64" height="64" />
+          <span>Neato<span class="orange">_</span>Echo</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="/#story">How it works</a></li>
+          <li><a href="/#privacy">Privacy</a></li>
+          <li><a href="/#install">Install</a></li>
+          <li><a href="/docs/" aria-current="page">Docs</a></li>
+          <li><a href="/changelog.html">Changelog</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-cta btn-sm" data-download href="https://github.com/markhiltonapps/neato-echo/releases">
+            <span data-download-label>Download</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-mobile" aria-label="Menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="nav-mobile" id="nav-mobile" data-open="false" aria-label="Mobile">
+        <ul>
+          <li><a href="/#story">How it works</a></li>
+          <li><a href="/#privacy">Privacy</a></li>
+          <li><a href="/#install">Install</a></li>
+          <li><a href="/docs/">Docs</a></li>
+          <li><a href="/changelog.html">Changelog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="docs-shell container">
+      <button class="docs-side-toggle btn btn-outline btn-sm" type="button" aria-expanded="false" aria-controls="docs-side">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+        Browse the manual
+      </button>
+
+      <aside class="docs-side" id="docs-side">
+        <div class="docs-search">
+          <label class="sr-only" for="docs-q">Search the manual</label>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" />
+        </div>
+        <nav class="docs-nav" aria-label="Manual">
+          <ul><li class="docs-group"><h3>Start here</h3><ul><li><a href="/docs/" data-title="Introduction" data-desc="Neato Echo is local voice dictation and meeting notes with summaries, all on your Windows PC.">Introduction</a></li><li><a href="/docs/quickstart.html" data-title="Quickstart" data-desc="Get Neato Echo running on your Windows PC in a few minutes.">Quickstart</a></li><li><a href="/docs/faq.html" data-title="FAQ" data-desc="Frequently asked questions about Neato Echo.">FAQ</a></li><li><a href="/docs/help/getting-help.html" data-title="Getting help" data-desc="How to reach us, what to include so we can fix it fast, and where to report a bug.">Getting help</a></li></ul></li><li class="docs-group"><h3>Dictation</h3><ul><li><a href="/docs/guides/dictation.html" data-title="How dictation works" data-desc="Speak into any app and have your words typed at the cursor, and the settings that control it.">How dictation works</a></li><li><a href="/docs/help/dictation/hotkeys.html" data-title="Your hotkeys" data-desc="Neato Echo has five separate shortcuts, not one. Here's what each does, what it defaults to, and how to change or unbind it.">Your hotkeys</a></li><li><a href="/docs/help/dictation/hold-or-tap.html" data-title="Hold or tap" data-desc="Press once to start and again to stop, or hold the key while you speak. Both work in Neato Echo on Windows.">Hold or tap</a></li><li><a href="/docs/help/dictation/choosing-a-shortcut.html" data-title="Choosing a shortcut that works" data-desc="The rules a hotkey has to follow, which combinations Windows won't give up, and what to use instead.">Choosing a shortcut that works</a></li><li><a href="/docs/help/dictation/auto-paste-and-clipboard.html" data-title="Where your text goes" data-desc="Neato Echo pastes at your cursor when dictation finishes. How to turn that off, and how to keep a copy on the clipboard.">Where your text goes</a></li><li><a href="/docs/help/dictation/cleanup.html" data-title="Dictation cleanup" data-desc="Neato Echo can tidy your dictation before pasting it — removing filler words, fixing grammar and punctuation. It's off by default; here's what it changes and how to switch it on.">Dictation cleanup</a></li><li><a href="/docs/help/dictation/languages.html" data-title="Dictating in other languages" data-desc="Set the language you speak, use auto-detect, and see which languages each local transcription engine supports.">Dictating in other languages</a></li><li><a href="/docs/help/dictation/translation.html" data-title="Translation" data-desc="Dictate in one language and have the text pasted in another, using a dedicated hotkey.">Translation</a></li><li><a href="/docs/help/dictation/improve-accuracy.html" data-title="Getting better accuracy" data-desc="Practical things that improve transcription quality — the engine you use, your microphone, your language setting, and teaching it your vocabulary.">Getting better accuracy</a></li></ul></li><li class="docs-group"><h3>Voice and chat agent</h3><ul><li><a href="/docs/guides/agent-mode.html" data-title="AI agent" data-desc="Speak an instruction instead of text, or open a chat that can work with your notes.">AI agent</a></li><li><a href="/docs/help/agent/voice-modes.html" data-title="The four things your voice can start" data-desc="Dictation, the voice agent, translation and meeting mode all listen to you but do different things. This is how to tell them apart.">The four things your voice can start</a></li><li><a href="/docs/help/agent/agent-name.html" data-title="Your agent's name" data-desc="Saying your agent's name during dictation hands the rest over to the agent. How that's detected, and how to rename or switch it off.">Your agent's name</a></li><li><a href="/docs/help/agent/voice-agent.html" data-title="The voice agent" data-desc="Press a key, say what you want done, and the result is typed at your cursor instead of your words.">The voice agent</a></li><li><a href="/docs/help/agent/chat-agent.html" data-title="The chat agent" data-desc="A chat window you can talk to, which can search your notes, create and edit them, check your calendar, and search the web if you've added a cloud provider key.">The chat agent</a></li></ul></li><li class="docs-group"><h3>Meetings</h3><ul><li><a href="/docs/guides/meeting-transcription.html" data-title="How meetings work" data-desc="Record a call, get a transcript with speaker labels and a summary, and find it again afterwards.">How meetings work</a></li><li><a href="/docs/help/meetings/record-a-meeting.html" data-title="Record a meeting" data-desc="Start a meeting note by hand or from a prompt, watch it transcribe live, pick a summary, and find it afterwards.">Record a meeting</a></li><li><a href="/docs/help/meetings/how-meeting-detection-works.html" data-title="How meeting detection works" data-desc="What makes the take-notes prompt appear, why it sometimes doesn't, and how to turn it off.">How meeting detection works</a></li><li><a href="/docs/help/meetings/speaker-labels.html" data-title="Speaker labels" data-desc="How Neato Echo works out who said what, how to correct it, and how to turn it off for a recording.">Speaker labels</a></li><li><a href="/docs/help/meetings/capture-both-sides.html" data-title="Capturing both sides of the call" data-desc="Why recording the other participants is separate from recording your microphone, and what Neato Echo does and doesn't capture.">Capturing both sides of the call</a></li><li><a href="/docs/help/meetings/connect-your-calendar.html" data-title="Connect Google or Microsoft calendar" data-desc="Link your calendar so meeting notes arrive titled, with attendees filled in and a one-click join.">Connect Google or Microsoft calendar</a></li></ul></li><li class="docs-group"><h3>Notes</h3><ul><li><a href="/docs/guides/notes.html" data-title="How notes work" data-desc="Where your dictations, meetings and uploads are kept, and how to organize, search and export them.">How notes work</a></li><li><a href="/docs/help/notes/organize-with-folders.html" data-title="Organize notes with folders" data-desc="Create folders, move notes between them, and understand the folders Neato Echo makes for you.">Organize notes with folders</a></li><li><a href="/docs/help/notes/search-your-notes.html" data-title="Search your notes" data-desc="Find a note by the words in it or by what it was about, including transcripts of past meetings.">Search your notes</a></li><li><a href="/docs/help/notes/export-your-notes.html" data-title="Export your notes" data-desc="Save a single note as Markdown, or keep every note mirrored to a folder on disk automatically.">Export your notes</a></li></ul></li><li class="docs-group"><h3>Make it yours</h3><ul><li><a href="/docs/guides/custom-dictionary.html" data-title="Make Neato Echo yours" data-desc="Teach Neato Echo your vocabulary, set up snippets, pick your microphone, and find any setting.">Make Neato Echo yours</a></li><li><a href="/docs/help/customize/custom-dictionary.html" data-title="Teach Neato Echo your words" data-desc="Add names, jargon and acronyms to the custom dictionary so they come out right every time.">Teach Neato Echo your words</a></li><li><a href="/docs/help/customize/snippets.html" data-title="Snippets: say a short phrase, get the full text" data-desc="Set up a trigger phrase that expands into a link, an intro, a sign-off or a prompt whenever you say it.">Snippets: say a short phrase, get the full text</a></li><li><a href="/docs/help/customize/choose-your-microphone.html" data-title="Choose your microphone" data-desc="Pick which input device Neato Echo listens to, and why the built-in one is often the better choice.">Choose your microphone</a></li><li><a href="/docs/help/customize/settings-reference.html" data-title="Where every setting lives" data-desc="A map of Neato Echo's settings — the six sections, what each one holds, and the tabs that hide things.">Where every setting lives</a></li></ul></li><li class="docs-group"><h3>Models and processing</h3><ul><li><a href="/docs/guides/cloud-vs-local.html" data-title="Cloud vs local processing" data-desc="Neato Echo runs locally by default. Here's what that means, and when you might add your own cloud provider key.">Cloud vs local processing</a></li><li><a href="/docs/guides/local-models.html" data-title="Local models" data-desc="The speech and language models Neato Echo runs on your PC, and how to choose between them.">Local models</a></li></ul></li><li class="docs-group"><h3>Windows</h3><ul><li><a href="/docs/platform/system-requirements.html" data-title="System requirements" data-desc="What Neato Echo needs from your Windows PC, and what the on-device speech and language models need on top of that.">System requirements</a></li><li><a href="/docs/platform/windows.html" data-title="Windows" data-desc="Installing Neato Echo on Windows, the SmartScreen warning, why no permission prompts appear, hold-to-talk, meeting audio, and updates.">Windows</a></li><li><a href="/docs/platform/dictating-into-other-apps.html" data-title="Dictating into other apps" data-desc="How your words get from Neato Echo into whatever you're typing in — and what to do when they don't.">Dictating into other apps</a></li><li><a href="/docs/platform/editors-and-terminals.html" data-title="Editors, IDEs and terminals" data-desc="Why terminals need a different paste shortcut, which ones Neato Echo recognizes, and what to do when yours isn't recognized.">Editors, IDEs and terminals</a></li><li><a href="/docs/platform/running-in-the-background.html" data-title="Running in the background" data-desc="The tray icon, the floating panel, starting with Windows, and the small settings that decide how much Neato Echo is in the way.">Running in the background</a></li><li><a href="/docs/platform/where-your-files-live.html" data-title="Where your files live" data-desc="Every folder Neato Echo writes to on Windows — settings, the notes database, logs, downloaded models and note files.">Where your files live</a></li><li><a href="/docs/platform/work-computers.html" data-title="Work and managed computers" data-desc="Installing where IT has locked things down, what the app connects to, and the settings that make Neato Echo fit a restrictive policy.">Work and managed computers</a></li></ul></li><li class="docs-group"><h3>Privacy</h3><ul><li><a href="/docs/help/privacy/where-your-data-goes.html" data-title="Where your voice and text go" data-desc="What leaves your PC when you dictate, what never goes anywhere, and the few things that can change that.">Where your voice and text go</a></li><li><a href="/docs/help/privacy/what-we-store-and-for-how-long.html" data-title="What is stored, and for how long" data-desc="The retention settings, what they default to, where your data sits on your PC, and how to delete it.">What is stored, and for how long</a></li><li><a href="/docs/help/privacy/is-my-data-used-to-train-ai.html" data-title="Is my data used to train AI models?" data-desc="No. Nothing is sent to Neato Ventures at all — and what changes if you bring your own cloud provider key.">Is my data used to train AI models?</a></li><li><a href="/docs/help/privacy/how-neato-echo-is-secured.html" data-title="How Neato Echo is secured" data-desc="Where your data sits, how API keys are protected, and what the app does and doesn't expose on the network.">How Neato Echo is secured</a></li><li><a href="/docs/help/privacy/gdpr-and-your-data-rights.html" data-title="GDPR and your data rights" data-desc="Your data never leaves your PC, so you exercise your rights over it by managing the files yourself — plus what to know about connected providers.">GDPR and your data rights</a></li><li><a href="/docs/help/privacy/hipaa-and-healthcare.html" data-title="HIPAA and healthcare use" data-desc="Where Neato Echo stands on HIPAA — no BAA is offered, and why local mode keeps audio and transcripts on the PC.">HIPAA and healthcare use</a></li><li><a href="/docs/help/privacy/for-your-it-team.html" data-title="For your IT team" data-desc="What Neato Echo is, what it connects to, where it writes, and where the source code is — the answers a security review asks for, in one place.">For your IT team</a></li></ul></li><li class="docs-group"><h3>Fix a problem</h3><ul><li><a href="/docs/troubleshooting.html" data-title="Common problems" data-desc="Find the fix for what's actually happening in Neato Echo, starting from the symptom.">Common problems</a></li><li><a href="/docs/help/fix/nothing-was-transcribed.html" data-title="Nothing was transcribed" data-desc="What &quot;No Audio Detected&quot; means, why an empty result happens, and how to get the take back.">Nothing was transcribed</a></li><li><a href="/docs/help/fix/microphone-not-working.html" data-title="My microphone isn't working" data-desc="The &quot;No microphones detected&quot; message, the wrong input device, and the Windows privacy setting that quietly blocks desktop apps.">My microphone isn't working</a></li><li><a href="/docs/help/fix/hotkey-not-working.html" data-title="My hotkey doesn't work" data-desc="Nothing happens when you press the shortcut — conflicts, blocked keys, and the fallbacks Neato Echo tries on its own.">My hotkey doesn't work</a></li><li><a href="/docs/help/fix/text-not-pasting.html" data-title="The text doesn't paste" data-desc="Transcription works but nothing appears in the app you're typing into — the automatic pasting setting, apps that refuse simulated input, and the clipboard fallback.">The text doesn't paste</a></li><li><a href="/docs/help/fix/text-pasted-twice.html" data-title="My text is pasted twice" data-desc="Dictated text arriving duplicated — what to do now, and where the fix stands.">My text is pasted twice</a></li><li><a href="/docs/help/fix/wrong-words-or-language.html" data-title="The words come out wrong" data-desc="Names and jargon mis-heard, the wrong language, or accuracy that dropped — what to change, in order.">The words come out wrong</a></li><li><a href="/docs/help/fix/it-answers-instead-of-typing.html" data-title="It answers me instead of typing what I said" data-desc="You dictated a sentence and got a reply, a rewrite, or an answer to your question — here's which feature did it.">It answers me instead of typing what I said</a></li><li><a href="/docs/help/fix/recover-a-lost-dictation.html" data-title="I lost a dictation" data-desc="Re-transcribe audio you already recorded, and recover a dictation you cancelled by mistake.">I lost a dictation</a></li><li><a href="/docs/help/fix/meeting-audio-not-captured.html" data-title="Meeting audio isn't captured" data-desc="Only your voice is recorded, or nothing is — the Windows audio helper, the default output device, and what to check.">Meeting audio isn't captured</a></li><li><a href="/docs/help/fix/app-wont-open.html" data-title="Neato Echo won't open" data-desc="Installed but no window appears, the app seems to be running invisibly, or the dictation panel is off-screen.">Neato Echo won't open</a></li><li><a href="/docs/help/fix/antivirus-blocks-neato-echo.html" data-title="Antivirus or firewall blocks Neato Echo" data-desc="SmartScreen warning about the installer, Windows Defender quarantining bundled binaries, or a firewall prompt about the local server.">Antivirus or firewall blocks Neato Echo</a></li><li><a href="/docs/help/fix/updates-and-reinstalling.html" data-title="Updates and reinstalling" data-desc="How updates arrive, what to do when one fails, and how to reinstall without losing anything you need.">Updates and reinstalling</a></li><li><a href="/docs/help/fix/model-download-fails.html" aria-current="page" data-title="A model won't download" data-desc="Downloads that fail, stall, or install incorrectly — and what each error message actually means.">A model won't download</a></li><li><a href="/docs/help/fix/local-transcription-not-working.html" data-title="Local transcription isn't working" data-desc="Parakeet or Whisper failing on your own PC — models, GPU acceleration, and the per-mode setting people miss.">Local transcription isn't working</a></li></ul></li></ul>
+          <p class="docs-nav-empty" hidden>Nothing matches. Try a different word, or <a href="/support.html">ask us</a>.</p>
+        </nav>
+      </aside>
+
+      <main id="main" class="docs-main">
+        <article class="doc">
+          <header class="doc-head">
+            <p class="doc-crumb"><a href="/docs/">Manual</a> <span aria-hidden="true">/</span> Fix a problem</p>
+            <h1>A model won't download</h1>
+            <p class="doc-lede">Downloads that fail, stall, or install incorrectly — and what each error message actually means.</p>
+          </header>
+          <div class="doc-body">
+<p>You picked a local model and the download failed, stopped part way, or finished
+and then wouldn&#39;t install.</p>
+<p>The error you got narrows it down considerably, so start there.</p>
+<h2 id="what-each-message-means"><a class="anchor" href="#what-each-message-means" aria-label="Link to this section">What each message means</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Message</th><th>What it means</th><th>What to do</th></tr></thead><tbody><tr><td><strong>Certificate error — your network may use SSL inspection</strong></td><td>A proxy is intercepting the download and its root isn&#39;t trusted</td><td>Download from a different network, or have IT trust the proxy root</td></tr><tr><td><strong>Server error</strong></td><td>The model host returned an error</td><td>Wait and retry — this is usually temporary and not on your side</td></tr><tr><td><strong>Model downloaded but installation failed</strong></td><td>The file arrived but couldn&#39;t be unpacked</td><td>Click download again. It reuses what you already downloaded rather than fetching it a second time</td></tr><tr><td><strong>Download failed</strong></td><td>A generic network failure</td><td>Check the connection and retry; see below if it keeps happening</td></tr></tbody></table></div>
+<aside class="callout callout-tip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M8.5 14.5A6 6 0 1 1 15.5 14.5c-.6.6-1 1.4-1 2.5h-5c0-1.1-.4-1.9-1-2.5z"/></svg><div class="callout-body">
+
+<p><strong>&quot;Model downloaded but installation failed&quot; is worth retrying immediately.</strong>
+The app is explicit that retrying installs from the file you already have — so
+it costs seconds, not another full download.</p>
+</div></aside>
+
+
+<h2 id="a-model-that-says-it39s-downloaded-but-won39t-run"><a class="anchor" href="#a-model-that-says-it39s-downloaded-but-won39t-run" aria-label="Link to this section">A model that says it&#39;s downloaded but won&#39;t run</a></h2>
+<p>If a model shows as downloaded in the picker but transcription fails with a
+<strong>&quot;not downloaded&quot;</strong> message, an interrupted download almost certainly left an
+empty or partial file behind, and the picker is trusting the folder rather than
+the contents.</p>
+<ol class="doc-steps">
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">1</span><h3 class="doc-step-title">Close Neato Echo</h3><div class="doc-step-body">
+
+<p>From the tray icon, so nothing is holding the file open.</p>
+</div></li>
+
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">2</span><h3 class="doc-step-title">Delete the model's folder</h3><div class="doc-step-body">
+
+<p>Open <code>%USERPROFILE%\.cache\neato-echo</code> in File Explorer and delete the
+folder for that model only. Leave the others alone.</p>
+</div></li>
+
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">3</span><h3 class="doc-step-title">Download it again</h3><div class="doc-step-body">
+
+<p>Reopen the app, go to <strong>Settings</strong> → <strong>Speech-to-Text</strong> (or <strong>Language
+Models</strong>) under <strong>AI Models</strong>, and download the model fresh.</p>
+</div></li>
+
+
+</ol>
+
+
+<h2 id="if-it-keeps-failing"><a class="anchor" href="#if-it-keeps-failing" aria-label="Link to this section">If it keeps failing</a></h2>
+<ol class="doc-steps">
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">1</span><h3 class="doc-step-title">Check you have the disk space</h3><div class="doc-step-body">
+
+<p>Models are large, and a download that dies part way through is usually a
+full disk. The default Parakeet model is about 600 MB, the recommended Qwen
+3.5 4B language model about 2.5 GB, and the larger Whisper models need
+several gigabytes free.</p>
+</div></li>
+
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">2</span><h3 class="doc-step-title">Try a smaller model</h3><div class="doc-step-body">
+
+<p>If a small model downloads and a large one doesn&#39;t, that&#39;s disk space or a
+connection dropping over a long transfer — not a broken installation.
+Whisper Base, or a smaller Qwen size, are quick tests.</p>
+</div></li>
+
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">3</span><h3 class="doc-step-title">Try a different network</h3><div class="doc-step-body">
+
+<p>Corporate networks, VPNs and DNS filters block the model hosts more often
+than anything else, because the files come from <code>huggingface.co</code> and
+GitHub rather than from us.</p>
+</div></li>
+
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">4</span><h3 class="doc-step-title">Delete the model and start again</h3><div class="doc-step-body">
+
+<p>In the model picker, delete the partial model, then download it fresh. That
+clears a corrupted partial file, which retrying alone won&#39;t always fix. If
+the picker won&#39;t let you delete it, remove the folder by hand as described
+above.</p>
+</div></li>
+
+
+</ol>
+
+
+<h2 id="on-a-managed-network"><a class="anchor" href="#on-a-managed-network" aria-label="Link to this section">On a managed network</a></h2>
+<p>Model downloads are the one thing the default local setup needs the internet
+for, so they can fail on a network where everything else works. Your IT team
+needs to allow:</p>
+<ul>
+<li><code>huggingface.co</code></li>
+<li><code>cdn-lfs.huggingface.co</code>, <code>cdn-lfs-us-1.huggingface.co</code></li>
+<li><code>github.com</code>, <code>objects.githubusercontent.com</code></li>
+</ul>
+<p>See <a href="/docs/help/privacy/for-your-it-team.html">For your IT team</a>.</p>
+<h2 id="faq"><a class="anchor" href="#faq" aria-label="Link to this section">FAQ</a></h2>
+<div class="acc-group">
+
+
+<details class="acc"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span>Can I use Neato Echo while a model downloads?</span></summary><div class="acc-body">
+
+<p>Yes. Anything that already has its model can keep working; the mode waiting
+for the new model can&#39;t transcribe until it lands.</p>
+</div></details>
+
+
+
+<details class="acc"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span>Do I need to download a model at all?</span></summary><div class="acc-body">
+
+<p>For transcription, yes — Neato Echo runs speech-to-text on your PC, and the
+default Parakeet model is downloaded on first run. Summaries, cleanup and
+the agent need a language model from <strong>Settings</strong> → <strong>Language Models</strong>.
+The only way around a download is to add a key under <strong>Cloud Providers</strong>
+and use that provider instead.</p>
+</div></details>
+
+
+
+<details class="acc"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span>Where do models go, and how much space do they use?</span></summary><div class="acc-body">
+
+<p>In <code>%USERPROFILE%\.cache\neato-echo</code>. The model picker shows each one&#39;s size
+before you download it, and you can delete any of them from the same place.</p>
+</div></details>
+
+
+
+<details class="acc"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span>It downloads every time I restart.</span></summary><div class="acc-body">
+
+<p>That points at the install step failing rather than the download — the file
+never lands where the app expects it. Send us a debug log; see
+<a href="/docs/troubleshooting.html#send-us-a-debug-log">how</a>.</p>
+</div></details>
+
+
+</div>
+
+
+<h2 id="related"><a class="anchor" href="#related" aria-label="Link to this section">Related</a></h2>
+<ul>
+<li><a href="/docs/guides/local-models.html">Local models</a></li>
+<li><a href="/docs/help/fix/local-transcription-not-working.html">Local transcription isn&#39;t working</a></li>
+<li><a href="/docs/platform/where-your-files-live.html">Where your files live</a></li>
+</ul>
+
+          </div>
+<nav class="doc-pager" aria-label="Previous and next"><a class="doc-pager-link doc-pager-prev" href="/docs/help/fix/updates-and-reinstalling.html" rel="prev"><span class="micro">Previous</span><span class="doc-pager-title">Updates and reinstalling</span></a><a class="doc-pager-link doc-pager-next" href="/docs/help/fix/local-transcription-not-working.html" rel="next"><span class="micro">Next</span><span class="doc-pager-title">Local transcription isn't working</span></a></nav>
+
+        <section class="doc-help" aria-labelledby="still-need-help">
+          <h2 id="still-need-help">Still need help?</h2>
+          <p>Write to <a href="mailto:hello@neatoventures.com">hello@neatoventures.com</a> with your Windows version, your Neato Echo version (Settings → System), and what you were doing. A person reads every message.</p>
+          <div class="doc-help-actions">
+            <a class="btn btn-retro" href="mailto:hello@neatoventures.com">Email support</a>
+            <a class="btn btn-outline btn-sm" href="https://github.com/markhiltonapps/neato-echo/issues/new" rel="noopener" target="_blank">Report a bug on GitHub</a>
+          </div>
+        </section>
+        </article>
+      </main>
+<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#what-each-message-means">What each message means</a></li><li class="toc-2"><a href="#a-model-that-says-it39s-downloaded-but-won39t-run">A model that says it&amp;#39;s downloaded but won&amp;#39;t run</a></li><li class="toc-2"><a href="#if-it-keeps-failing">If it keeps failing</a></li><li class="toc-2"><a href="#on-a-managed-network">On a managed network</a></li><li class="toc-2"><a href="#faq">FAQ</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
+    </div>
+
+
+    <footer class="footer band-brown bg-starburst">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="wordmark" href="/" style="color: hsl(50 33% 95%)">
+              <img src="/assets/icon-64.png" alt="" width="64" height="64" />
+              <span>Neato<span class="orange">_</span>Echo</span>
+            </a>
+            <p class="footer-tag" style="margin-top: 1rem">The future you were promised, on your own PC.</p>
+            <p class="muted" style="margin-top: 0.75rem; max-width: 34rem">
+              A <a href="https://www.neatoventures.com" rel="noopener">Neato Ventures</a> product,
+              built in Houston, TX on the open-source
+              <a href="https://github.com/OpenWhispr/openwhispr" rel="noopener">OpenWhispr</a> project (MIT).
+            </p>
+          </div>
+          <div>
+            <h3>Product</h3>
+            <ul>
+              <li><a data-download href="https://github.com/markhiltonapps/neato-echo/releases">Download</a></li>
+              <li><a href="/docs/">Documentation</a></li>
+              <li><a href="/changelog.html">Changelog</a></li>
+              <li><a href="/support.html">Support</a></li>
+              <li><a href="/privacy.html">Privacy Policy</a></li>
+              <li><a href="/terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Neato Ventures</h3>
+            <ul>
+              <li><a href="https://www.neatoventures.com" rel="noopener">neatoventures.com</a></li>
+              <li><a href="https://github.com/markhiltonapps/neato-echo" rel="noopener">Source on GitHub</a></li>
+              <li><a href="mailto:hello@neatoventures.com">hello@neatoventures.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Neato Ventures. Neato Echo is licensed under MIT.</span>
+          <span class="micro">Made with an atom and a microphone</span>
+        </div>
+      </div>
+    </footer>
+    <script src="/site.js" defer></script>
+    <script src="/docs.js" defer></script>
+  </body>
+</html>

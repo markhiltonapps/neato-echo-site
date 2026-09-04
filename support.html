@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Changelog — Neato Echo</title>
-    <meta name="description" content="Every Neato Echo build, with release notes and installers." />
+    <title>Support — Neato Echo</title>
+    <meta name="description" content="Get help with Neato Echo: email a person, report a bug, or read the manual." />
     <link rel="icon" href="assets/favicon.ico" sizes="any" />
     <link rel="icon" href="assets/echo-mark.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -15,6 +15,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .support-grid {
+        display: grid;
+        gap: 1.5rem;
+        margin-top: 3rem;
+      }
+      .support-card {
+        padding: 2rem;
+        display: grid;
+        gap: 1rem;
+        align-content: start;
+      }
+      .support-card h2 {
+        font-size: 1.05rem;
+      }
+      .support-card p,
+      .support-card li {
+        color: hsl(var(--muted-foreground));
+      }
+      .support-card ol {
+        margin: 0;
+        padding-left: 1.3rem;
+        display: grid;
+        gap: 0.4rem;
+      }
+      .support-card .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+      }
+      .support-card code {
+        font-family: var(--font-display);
+        font-size: 0.85em;
+        background: hsl(var(--muted));
+        padding: 0.05em 0.35em;
+        border-radius: 3px;
+      }
+      .support-card:target {
+        border-color: hsl(var(--teal));
+        box-shadow: 8px 8px 0 hsl(var(--teal) / 0.2);
+      }
+      .support-manual {
+        margin-top: 3rem;
+        text-align: center;
+        display: grid;
+        gap: 1rem;
+        justify-items: center;
+      }
+      .support-manual p {
+        max-width: 40rem;
+        color: hsl(var(--muted-foreground));
+      }
+      @media (min-width: 800px) {
+        .support-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
     <a class="sr-only" href="#main">Skip to content</a>
@@ -29,9 +88,8 @@
           <li><a href="index.html#story">How it works</a></li>
           <li><a href="index.html#privacy">Privacy</a></li>
           <li><a href="index.html#install">Install</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li>
           <li><a href="docs/">Docs</a></li>
-          <li><a href="changelog.html" aria-current="page">Changelog</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
         </ul>
         <div class="nav-actions">
           <a class="btn btn-cta btn-sm" data-download href="https://github.com/markhiltonapps/neato-echo/releases">
@@ -47,7 +105,6 @@
           <li><a href="index.html#story">How it works</a></li>
           <li><a href="index.html#privacy">Privacy</a></li>
           <li><a href="index.html#install">Install</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li>
           <li><a href="docs/">Docs</a></li>
           <li><a href="changelog.html">Changelog</a></li>
         </ul>
@@ -57,18 +114,58 @@
     <main id="main">
       <section class="bg-starburst" style="padding-bottom: 3rem">
         <div class="container section-head">
-          <h1>Changelog</h1>
+          <h1>Support</h1>
           <p>
-            Every build of Neato Echo, newest first. Notes and installers are pulled live from
-            the project's GitHub releases, so this page is never out of date.
+            A person reads every message. Tell us what you were doing and what happened instead,
+            and we can usually answer on the first reply.
           </p>
         </div>
       </section>
 
-      <section class="band" style="padding-top: 3rem">
+      <section class="band" style="padding-block: 3rem 5rem">
         <div class="container">
-          <div class="releases" data-releases></div>
-          <p class="release-status" data-release-status>Loading releases…</p>
+          <div class="support-grid">
+            <article class="googie-card support-card" id="contact">
+              <h2>Email support</h2>
+              <p>Questions, problems, or a feature you wish existed. Include:</p>
+              <ol>
+                <li>Your Windows version (10 or 11).</li>
+                <li>Your Neato Echo version: open <strong>Settings</strong>, choose <strong>System</strong>, and read <strong>Current version</strong>.</li>
+                <li>What you were doing, and what happened instead of what you expected.</li>
+              </ol>
+              <p>If something failed silently, attach a screenshot or the newest file from <code>%APPDATA%\Neato Echo\logs</code>.</p>
+              <div class="actions">
+                <a class="btn btn-cta btn-sm" href="mailto:hello@neatoventures.com?subject=Neato%20Echo%20support">Email hello@neatoventures.com</a>
+              </div>
+            </article>
+
+            <article class="googie-card support-card" id="bug">
+              <h2>Report a bug</h2>
+              <p>Found something broken? Open an issue on GitHub so it is tracked to a fix, or email it if you would rather not use GitHub.</p>
+              <ol>
+                <li>Say what you did, step by step.</li>
+                <li>Say what happened, and what you expected.</li>
+                <li>Add your Neato Echo version and a screenshot if you have one.</li>
+              </ol>
+              <p>Please do not paste passwords or API keys into an issue. Issues are public.</p>
+              <div class="actions">
+                <a class="btn btn-retro" href="https://github.com/markhiltonapps/neato-echo/issues/new" rel="noopener" target="_blank">Open a GitHub issue</a>
+                <a class="btn btn-outline btn-sm" href="mailto:hello@neatoventures.com?subject=Neato%20Echo%20bug%20report">Email it instead</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="support-manual">
+            <h2>Read the manual first?</h2>
+            <p>
+              Most questions are answered there, from picking a hotkey to why the words came out wrong.
+              Start from the symptom on the troubleshooting page.
+            </p>
+            <div class="hero-actions" style="justify-content: center">
+              <a class="btn btn-hero-outline btn-sm" href="docs/">Open the manual</a>
+              <a class="btn btn-outline btn-sm" href="docs/troubleshooting.html">Common problems</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -92,12 +189,9 @@
             <h3>Product</h3>
             <ul>
               <li><a data-download href="https://github.com/markhiltonapps/neato-echo/releases">Download</a></li>
-              <li><a href="docs/">Docs</a></li>
               <li><a href="docs/">Documentation</a></li>
               <li><a href="changelog.html">Changelog</a></li>
               <li><a href="support.html">Support</a></li>
-              <li><a href="index.html#privacy">Privacy</a></li>
-              <li><a href="index.html#pricing">Pricing</a></li>
               <li><a href="privacy.html">Privacy Policy</a></li>
               <li><a href="terms.html">Terms of Service</a></li>
             </ul>
