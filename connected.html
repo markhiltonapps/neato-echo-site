@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Connected — Neato Echo</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="icon" href="assets/echo-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .done {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+      .done-card {
+        max-width: 30rem;
+        width: 100%;
+        padding: 2.5rem;
+        text-align: center;
+        display: grid;
+        gap: 1.1rem;
+        justify-items: center;
+      }
+      .done-card img {
+        width: 72px;
+        height: 72px;
+        border-radius: 17px;
+      }
+      .done-card h1 {
+        font-size: clamp(1.25rem, 1rem + 1vw, 1.6rem);
+      }
+      .done-card p {
+        color: hsl(var(--muted-foreground));
+      }
+      .done-card .err {
+        font-family: var(--font-display);
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        color: hsl(var(--burnt-orange));
+      }
+      .done-card .btn {
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="done bg-starburst">
+      <div class="done-card googie-card">
+        <img src="assets/icon-192.png" alt="" width="192" height="192" />
+        <h1 data-title>Connected</h1>
+        <p data-body>You can close this tab and go back to Neato Echo.</p>
+        <p class="err" data-err hidden></p>
+        <a class="btn btn-outline btn-sm" href="index.html">Neato Echo home</a>
+      </div>
+    </main>
+    <script>
+      (function () {
+        var q = new URLSearchParams(location.search);
+        var title = document.querySelector("[data-title]");
+        var body = document.querySelector("[data-body]");
+        var err = document.querySelector("[data-err]");
+        var service = q.has("gcal_connected") || q.has("gcal_error") ? "Google Calendar" : q.has("mcal_connected") || q.has("mcal_error") ? "Outlook calendar" : "Calendar";
+        var code = q.get("gcal_error") || q.get("mcal_error");
+        if (code) {
+          title.textContent = service + " was not connected";
+          body.textContent = "Neato Echo did not receive access. Close this tab, go back to the app, and try connecting again.";
+          err.textContent = "Reason: " + code.replace(/_/g, " ");
+          err.hidden = false;
+        } else {
+          title.textContent = service + " connected";
+          body.textContent = "Neato Echo has read-only access to your calendar. You can close this tab and go back to the app.";
+        }
+        document.title = title.textContent + " — Neato Echo";
+      })();
+    </script>
+  </body>
+</html>
