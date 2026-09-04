@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Neato Echo</title>
+    <meta name="description" content="How Neato Echo handles your voice, notes, and calendar data. Short version: it stays on your PC." />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="icon" href="assets/echo-mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .legal {
+        max-width: 68ch;
+        margin-inline: auto;
+        display: grid;
+        gap: 1.25rem;
+      }
+      .legal h2 {
+        margin-top: 1.5rem;
+        font-size: 1rem;
+      }
+      .legal ul {
+        margin: 0;
+        padding-left: 1.25rem;
+        display: grid;
+        gap: 0.4rem;
+      }
+      .legal p,
+      .legal li {
+        color: hsl(var(--muted-foreground));
+      }
+      .legal strong {
+        color: hsl(var(--foreground));
+      }
+      .legal .updated {
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="sr-only" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="container">
+        <a class="wordmark" href="index.html" aria-label="Neato Echo home">
+          <img src="assets/icon-64.png" alt="" width="64" height="64" />
+          <span>Neato<span class="orange">_</span>Echo</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#story">How it works</a></li>
+          <li><a href="index.html#privacy">Privacy</a></li>
+          <li><a href="index.html#install">Install</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-cta btn-sm" data-download href="https://github.com/markhiltonapps/neato-echo/releases">
+            <span data-download-label>Download</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-mobile" aria-label="Menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="nav-mobile" id="nav-mobile" data-open="false" aria-label="Mobile">
+        <ul>
+          <li><a href="index.html#story">How it works</a></li>
+          <li><a href="index.html#privacy">Privacy</a></li>
+          <li><a href="index.html#install">Install</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="bg-starburst" style="padding-bottom: 2.5rem">
+        <div class="container section-head">
+          <h1>Privacy Policy</h1>
+          <p>Neato Echo is built so that your voice, your notes, and your calendar stay on your own computer. This page says exactly what that means.</p>
+          <p class="micro updated">Last updated September 4, 2026</p>
+        </div>
+      </section>
+
+      <section class="band" style="padding-top: 3rem">
+        <div class="container legal">
+          <h2>Who we are</h2>
+          <p>Neato Echo is made by <strong>Neato Ventures</strong>, Houston, Texas. Questions about this policy go to <a href="mailto:hello@neatoventures.com">hello@neatoventures.com</a>.</p>
+
+          <h2>The short version</h2>
+          <ul>
+            <li>Neato Echo runs on your Windows PC. Speech recognition and AI summaries are performed by models installed on that PC.</li>
+            <li>Neato Ventures does not receive your audio, transcripts, notes, summaries, or calendar data. We run no servers that the app sends this data to.</li>
+            <li>The app has no account system and does not collect analytics or telemetry.</li>
+          </ul>
+
+          <h2>What the app stores on your computer</h2>
+          <ul>
+            <li><strong>Audio</strong> you dictate or record, kept temporarily for transcription, plus recent recordings you can review or delete in the app.</li>
+            <li><strong>Transcripts, notes, and summaries</strong>, in a local database inside your Windows user profile.</li>
+            <li><strong>Settings</strong>, such as your hotkey, chosen models, and custom dictionary.</li>
+            <li><strong>Downloaded models</strong> for speech recognition and summaries.</li>
+          </ul>
+          <p>Deleting the app's data folder, or uninstalling and choosing to remove data, removes all of the above. Nothing is retained elsewhere because nothing was sent elsewhere.</p>
+
+          <h2>What leaves your computer</h2>
+          <ul>
+            <li><strong>Model downloads.</strong> On first setup the app downloads speech and language models from their public sources on GitHub and Hugging Face. Those requests carry no personal data beyond what any file download does.</li>
+            <li><strong>Update checks.</strong> The app checks GitHub for new versions. GitHub sees the request, not the contents of your PC.</li>
+            <li><strong>Optional cloud providers.</strong> If you choose to add your own API key for OpenAI, Google, Anthropic, or another provider, the app sends audio or text to that provider for processing under that provider's terms. This is off by default and clearly labeled in Settings.</li>
+            <li><strong>Optional calendar connections.</strong> Described below.</li>
+          </ul>
+
+          <h2>Calendar connections</h2>
+          <p>You can connect a Google Calendar or a Microsoft (Outlook) calendar so the app can show upcoming meetings and name your notes after them. When you do:</p>
+          <ul>
+            <li>You sign in directly with Google or Microsoft in your browser. Neato Ventures never sees your password.</li>
+            <li>The app requests <strong>read-only</strong> access: your list of calendars and the events on them. It cannot create, change, or delete events.</li>
+            <li>Event titles, times, and attendees are read by the app on your PC to detect meetings and label notes. They are stored only in the app's local database.</li>
+            <li>The sign-in token is stored encrypted on your PC. Disconnecting a calendar in Settings deletes it.</li>
+          </ul>
+          <p>Neato Echo's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. Calendar data obtained through Google is used only to show your meetings inside the app and to label your notes; it is never transferred to Neato Ventures, sold, used for advertising, or used to train AI models.</p>
+
+          <h2>Children</h2>
+          <p>Neato Echo is a productivity tool for adults and is not directed at children under 13.</p>
+
+          <h2>Changes</h2>
+          <p>If this policy changes, the new version is posted here with an updated date. Because the app does not contact us, we cannot notify you inside the app; check this page or the changelog.</p>
+
+          <h2>Contact</h2>
+          <p><a href="mailto:hello@neatoventures.com">hello@neatoventures.com</a>, Neato Ventures, Houston, TX.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer band-brown bg-starburst">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="wordmark" href="index.html" style="color: hsl(50 33% 95%)">
+              <img src="assets/icon-64.png" alt="" width="64" height="64" />
+              <span>Neato<span class="orange">_</span>Echo</span>
+            </a>
+            <p class="footer-tag" style="margin-top: 1rem">The future you were promised, on your own PC.</p>
+            <p class="muted" style="margin-top: 0.75rem; max-width: 34rem">
+              A <a href="https://www.neatoventures.com" rel="noopener">Neato Ventures</a> product,
+              built in Houston, TX on the open-source
+              <a href="https://github.com/OpenWhispr/openwhispr" rel="noopener">OpenWhispr</a> project (MIT).
+            </p>
+          </div>
+          <div>
+            <h3>Product</h3>
+            <ul>
+              <li><a data-download href="https://github.com/markhiltonapps/neato-echo/releases">Download</a></li>
+              <li><a href="changelog.html">Changelog</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Neato Ventures</h3>
+            <ul>
+              <li><a href="https://www.neatoventures.com" rel="noopener">neatoventures.com</a></li>
+              <li><a href="https://github.com/markhiltonapps/neato-echo" rel="noopener">Source on GitHub</a></li>
+              <li><a href="mailto:hello@neatoventures.com">hello@neatoventures.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Neato Ventures. Neato Echo is licensed under MIT.</span>
+          <span class="micro">Made with an atom and a microphone</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>
