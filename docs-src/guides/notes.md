@@ -4,7 +4,7 @@ description: Where your dictations, meetings and uploads are kept, and how to or
 ---
 Everything Neato Echo transcribes is saved as a note: dictations, meeting
 recordings, uploaded audio, and anything you type yourself. Notes live in a
-local database on your PC (`%APPDATA%\Neato Echo`). Nothing syncs anywhere.
+local database on your PC (`%APPDATA%\neato-echo`). Nothing syncs anywhere.
 
 ## Start here
 

@@ -32,7 +32,7 @@ The process appears in Task Manager but no window ever shows.
     In the same way, add `--log-level=debug` to the shortcut's **Target** and
     launch again.
 
-    Logs are written to `%APPDATA%\Neato Echo\logs`. Send us the newest one.
+    Logs are written to `%APPDATA%\neato-echo\logs`. Send us the newest one.
   </Step>
 
   <Step title="Check your antivirus">
@@ -44,7 +44,7 @@ The process appears in Task Manager but no window ever shows.
     Uninstall, then remove the leftover data directories, then reinstall:
 
     ```batch theme={null}
-    rd /s /q "%APPDATA%\Neato Echo"
+    rd /s /q "%APPDATA%\neato-echo"
     rd /s /q "%USERPROFILE%\.cache\neato-echo"
     ```
 

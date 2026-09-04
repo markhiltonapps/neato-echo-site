@@ -64,7 +64,7 @@ request from anyone:
 
 * **Save notes as files** with **Rebuild all files** gives you every note and transcript
   as Markdown in one pass.
-* The notes database itself lives in `%APPDATA%\Neato Echo`. Copy that folder
+* The notes database itself lives in `%APPDATA%\neato-echo`. Copy that folder
   and you have a full backup — see
   [where your files live](/platform/where-your-files-live).
 

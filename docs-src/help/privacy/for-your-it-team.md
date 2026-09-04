@@ -56,8 +56,8 @@ offline.
 
 | Location                             | Contents                                                          |
 | ------------------------------------ | ----------------------------------------------------------------- |
-| `%APPDATA%\Neato Echo`               | Settings, the SQLite notes and history database, stored audio, encrypted API keys |
-| `%APPDATA%\Neato Echo\logs`          | Log files                                                         |
+| `%APPDATA%\neato-echo`               | Settings, the SQLite notes and history database, stored audio, encrypted API keys |
+| `%APPDATA%\neato-echo\logs`          | Log files                                                         |
 | `%USERPROFILE%\.cache\neato-echo`    | Downloaded speech and language models                             |
 | A folder the user chooses            | Markdown copies of notes, only if **Save notes as files** is on   |
 

@@ -11,7 +11,7 @@ over that data is something you exercise directly, without asking anyone.
 
 | Right                                             | How                                                                                                     |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **Access** — a copy of what is held               | It's all in `%APPDATA%\Neato Echo`. Open the Notes view, or copy the folder — see [where your files live](/platform/where-your-files-live) |
+| **Access** — a copy of what is held               | It's all in `%APPDATA%\neato-echo`. Open the Notes view, or copy the folder — see [where your files live](/platform/where-your-files-live) |
 | **Portability** — your content in a usable format | Export any note as Markdown, or turn on **Save notes as files** to mirror every note to a folder — see [export your notes](/help/notes/export-your-notes) |
 | **Correction**                                    | Edit the note or transcript in the app                                                                  |
 | **Erasure**                                       | Delete notes individually, use **Clear All Audio**, or **Reset app data** under **Settings → System** — see [what is stored, and for how long](/help/privacy/what-we-store-and-for-how-long) |

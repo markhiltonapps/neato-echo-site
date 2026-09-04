@@ -11,7 +11,7 @@ your user account, so nothing needs administrator access to read or remove.
 Your settings, dictation history, notes, logs and any saved audio live in:
 
 ```
-%APPDATA%\Neato Echo
+%APPDATA%\neato-echo
 ```
 
 Paste that into the File Explorer address bar to open it. Inside:

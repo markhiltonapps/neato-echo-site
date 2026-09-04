@@ -27,7 +27,7 @@ Send them up front and we can usually answer on the first reply:
 </Steps>
 
 If something failed silently, a screenshot of the error or the relevant part of
-your logs helps. Logs live in `%APPDATA%\Neato Echo\logs`. See
+your logs helps. Logs live in `%APPDATA%\neato-echo\logs`. See
 [Common problems](/troubleshooting) for how to turn on debug logging and
 capture the problem.
 

@@ -65,7 +65,7 @@ stays disabled otherwise, because there'd be nowhere to keep the audio.
 
 <AccordionGroup>
   <Accordion title="Where are the audio files stored?">
-    On your own PC, under `%APPDATA%\Neato Echo`. The same settings section
+    On your own PC, under `%APPDATA%\neato-echo`. The same settings section
     shows **Storage Usage** — how many files and how much space — and **Clear
     All Audio** if you want them gone now.
   </Accordion>

@@ -57,7 +57,7 @@ transcriptions, recordings and downloaded models together.
 If you'd rather look for yourself, or you're wiping a machine:
 
 ```
-%APPDATA%\Neato Echo
+%APPDATA%\neato-echo
 ```
 
 Inside it, `audio/` holds the recordings and `transcriptions.db` is the SQLite

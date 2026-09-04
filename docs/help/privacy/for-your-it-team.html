@@ -110,7 +110,7 @@ the local language-model server, the notes search index and a calendar
 sign-in callback catcher. Once models are downloaded, the app works fully
 offline.</p>
 <h2 id="where-it-writes"><a class="anchor" href="#where-it-writes" aria-label="Link to this section">Where it writes</a></h2>
-<div class="table-wrap"><table><thead><tr><th>Location</th><th>Contents</th></tr></thead><tbody><tr><td><code>%APPDATA%\Neato Echo</code></td><td>Settings, the SQLite notes and history database, stored audio, encrypted API keys</td></tr><tr><td><code>%APPDATA%\Neato Echo\logs</code></td><td>Log files</td></tr><tr><td><code>%USERPROFILE%\.cache\neato-echo</code></td><td>Downloaded speech and language models</td></tr><tr><td>A folder the user chooses</td><td>Markdown copies of notes, only if <strong>Save notes as files</strong> is on</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>Location</th><th>Contents</th></tr></thead><tbody><tr><td><code>%APPDATA%\neato-echo</code></td><td>Settings, the SQLite notes and history database, stored audio, encrypted API keys</td></tr><tr><td><code>%APPDATA%\neato-echo\logs</code></td><td>Log files</td></tr><tr><td><code>%USERPROFILE%\.cache\neato-echo</code></td><td>Downloaded speech and language models</td></tr><tr><td>A folder the user chooses</td><td>Markdown copies of notes, only if <strong>Save notes as files</strong> is on</td></tr></tbody></table></div>
 <p>Everything is per user; nothing needs administrator rights to run. The
 database is an ordinary file protected by the OS account and full-disk
 encryption; cloud provider keys are encrypted through Windows DPAPI. <a href="/docs/help/privacy/how-neato-echo-is-secured.html">How

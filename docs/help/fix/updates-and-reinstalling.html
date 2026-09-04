@@ -132,9 +132,9 @@ leaves your data alone.</p>
 
 <p>Your data lives outside the install folder, which is why it survives:</p>
 <ul>
-<li>Settings and the notes database: <code>%APPDATA%\Neato Echo</code></li>
+<li>Settings and the notes database: <code>%APPDATA%\neato-echo</code></li>
 <li>Downloaded speech and language models: <code>%USERPROFILE%\.cache\neato-echo</code></li>
-<li>Logs: <code>%APPDATA%\Neato Echo\logs</code></li>
+<li>Logs: <code>%APPDATA%\neato-echo\logs</code></li>
 </ul>
 <p>Uninstalling from <strong>Settings → Apps</strong> leaves those folders in place too.</p>
 <h2 id="a-clean-reinstall"><a class="anchor" href="#a-clean-reinstall" aria-label="Link to this section">A clean reinstall</a></h2>
@@ -149,7 +149,7 @@ you want to keep first — see <a href="/docs/help/notes/export-your-notes.html"
 
 
 <p>Uninstall from <strong>Settings → Apps</strong>, then:</p>
-<pre><code class="language-batch theme={null}">rd /s /q &quot;%APPDATA%\Neato Echo&quot;
+<pre><code class="language-batch theme={null}">rd /s /q &quot;%APPDATA%\neato-echo&quot;
 rd /s /q &quot;%USERPROFILE%\.cache\neato-echo&quot;</code></pre>
 <p>Then install again. Leave out the second line if you&#39;d rather not download the
 models again — that&#39;s usually the slowest part.</p>
@@ -169,7 +169,7 @@ is the most annoying part.</li>
 <details class="acc"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span>Will I lose my notes?</span></summary><div class="acc-body">
 
 <p>Not from a normal update or an install-over-the-top. Notes are only lost if
-you delete <code>%APPDATA%\Neato Echo</code> yourself, so export first if you&#39;re
+you delete <code>%APPDATA%\neato-echo</code> yourself, so export first if you&#39;re
 doing a clean reinstall.</p>
 </div></details>
 

@@ -26,7 +26,7 @@ side to encrypt.
 Keys you enter under **Settings → Cloud Providers** are encrypted using
 Electron's `safeStorage`, which hands off to **DPAPI**, Windows' built-in
 credential protection. The encrypted blobs sit in a `secure-keys` folder inside
-Neato Echo's application data (`%APPDATA%\Neato Echo`), and they can only be
+Neato Echo's application data (`%APPDATA%\neato-echo`), and they can only be
 decrypted by your own Windows user account on that PC.
 
 They are never sent to Neato Ventures.

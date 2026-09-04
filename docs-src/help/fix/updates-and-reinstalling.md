@@ -51,9 +51,9 @@ history and downloaded models. That's the normal path and it's safe:
 
 Your data lives outside the install folder, which is why it survives:
 
-* Settings and the notes database: `%APPDATA%\Neato Echo`
+* Settings and the notes database: `%APPDATA%\neato-echo`
 * Downloaded speech and language models: `%USERPROFILE%\.cache\neato-echo`
-* Logs: `%APPDATA%\Neato Echo\logs`
+* Logs: `%APPDATA%\neato-echo\logs`
 
 Uninstalling from **Settings → Apps** leaves those folders in place too.
 
@@ -71,7 +71,7 @@ step:
 Uninstall from **Settings → Apps**, then:
 
 ```batch theme={null}
-rd /s /q "%APPDATA%\Neato Echo"
+rd /s /q "%APPDATA%\neato-echo"
 rd /s /q "%USERPROFILE%\.cache\neato-echo"
 ```
 
@@ -93,7 +93,7 @@ Worth checking first, because it's usually unnecessary:
 <AccordionGroup>
   <Accordion title="Will I lose my notes?">
     Not from a normal update or an install-over-the-top. Notes are only lost if
-    you delete `%APPDATA%\Neato Echo` yourself, so export first if you're
+    you delete `%APPDATA%\neato-echo` yourself, so export first if you're
     doing a clean reinstall.
   </Accordion>
 

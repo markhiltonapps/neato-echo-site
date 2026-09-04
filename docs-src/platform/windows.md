@@ -93,7 +93,7 @@ downloaded models and your data in place.
 For a clean slate, also remove the app data and the model cache:
 
 ```batch theme={null}
-rd /s /q "%APPDATA%\Neato Echo"
+rd /s /q "%APPDATA%\neato-echo"
 rd /s /q "%USERPROFILE%\.cache\neato-echo"
 ```
 

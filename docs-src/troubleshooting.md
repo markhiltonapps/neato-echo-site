@@ -111,7 +111,7 @@ problem that's hard to describe becomes something we can read.
   <Step title="Open the logs folder">
     Click **Open Logs Folder** in the same **Debug Logging** section. The path to
     the current log is shown there too, under **Current log file**. Logs live in
-    `%APPDATA%\Neato Echo\logs`.
+    `%APPDATA%\neato-echo\logs`.
   </Step>
 
   <Step title="Attach the most recent log">
@@ -122,7 +122,7 @@ problem that's hard to describe becomes something we can read.
 <Note>
   Prefer the command line, or need debug mode on before the app finishes
   starting? Launch with `--log-level=debug`, or set `OPENWHISPR_LOG_LEVEL=debug`
-  in the `.env` file in your app data directory (`%APPDATA%\Neato Echo`).
+  in the `.env` file in your app data directory (`%APPDATA%\neato-echo`).
 </Note>
 
 Debug logs are plain text files, so you can open one and read it before you send

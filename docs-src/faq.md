@@ -20,7 +20,7 @@ description: Frequently asked questions about Neato Echo.
   </Accordion>
 
   <Accordion title="Where are my notes stored?">
-    Notes are stored in a local database in `%APPDATA%\Neato Echo`. Nothing syncs anywhere. You can export a note as Markdown, or turn on **Save notes as files** to mirror every note to a folder on disk. See [export your notes](/help/notes/export-your-notes).
+    Notes are stored in a local database in `%APPDATA%\neato-echo`. Nothing syncs anywhere. You can export a note as Markdown, or turn on **Save notes as files** to mirror every note to a folder on disk. See [export your notes](/help/notes/export-your-notes).
   </Accordion>
 
   <Accordion title="Is my data secure?">
