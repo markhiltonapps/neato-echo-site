@@ -55,7 +55,7 @@ ends."* See [speaker labels](/help/meetings/speaker-labels).
 
 ## Watch the words arrive
 
-While a recording runs, the transcript fills in as people speak. With the streaming speech model (the one setup picks for English), words appear almost as they are said, which helps when someone speaks quickly or with an accent you are following. With other models the transcript updates every few seconds instead.
+While a recording runs, the transcript fills in as people speak, updating every few seconds with the Parakeet model setup installs. If you would rather see words appear almost as they are said (useful when someone speaks quickly or with an accent you are following), select **Nemotron Speech Streaming EN** under **Settings**, **Speech-to-Text**, **Note Recording**. It is English-only and a little less accurate with punctuation.
 
 <Tip>
   On an older or slower PC, live transcription can push the processor hard during a long call. Turn it off under **Settings**, **Speech-to-Text**, **Note Recording**, **Live transcript while recording**; the transcript then updates in short steps and the recording uses less CPU.

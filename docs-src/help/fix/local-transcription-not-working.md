@@ -73,7 +73,7 @@ from your PC.
     Expected on modest hardware, especially with the larger Whisper models. A
     smaller model is the usual answer if speed matters more than the last few
     points of accuracy. For English dictation, **Nemotron Speech Streaming EN**
-    is the fastest and shows text while you speak.
+    shows text while you speak, at some cost in punctuation.
   </Accordion>
 
   <Accordion title="Which languages work locally?">

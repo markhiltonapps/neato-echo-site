@@ -114,7 +114,7 @@ The "Press Ctrl+Win to start" hint under Transcriptions names your dictation sho
 
 Click into any text box, for example a new email. Press your shortcut, say a sentence, and press it again (or let go, in Hold mode). The words appear at your cursor.
 
-The very first dictation after install can take longer while the speech model loads. After that it is quick, and with a streaming model the words show up as you speak.
+The very first dictation after install can take longer while the speech model loads. After that it is quick, and with the live preview on you see the text build while you talk.
 
 ## Related
 
