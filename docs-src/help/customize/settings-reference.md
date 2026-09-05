@@ -15,6 +15,7 @@ Open **Settings** from the sidebar.
 | **Preferences**     | Appearance, sounds, notifications, microphone and startup |
 | **Hotkeys**         | Dictation, voice agent, translation and meeting hotkeys  |
 | **Speech-to-Text**  | Engines for dictation, note recording and audio upload   |
+| **Speech-to-Text**, Note Recording | **Live transcript while recording**: words appear as they are spoken; turn off on a slow PC to save CPU |
 | **Language Models** | Local models for chat, cleanup and summaries             |
 | **Privacy & Data**  | Retention and permissions                                |
 | **System**          | Updates, storage and developer tools                     |
