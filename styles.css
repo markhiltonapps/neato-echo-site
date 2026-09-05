@@ -1256,3 +1256,277 @@ section {
     transform: none;
   }
 }
+
+/* ---------- animated dictation scene (story 1) ---------- */
+.dd-scene {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  background:
+    radial-gradient(120% 120% at 50% 0%, hsl(var(--retro-brown) / 0.25), transparent 60%),
+    hsl(var(--foreground));
+}
+.dd-app {
+  width: 100%;
+  max-width: 30rem;
+  background: hsl(var(--cream));
+  border: 2px solid hsl(var(--border));
+  border-radius: 12px;
+  box-shadow: 6px 6px 0 hsl(17 40% 8% / 0.45);
+  padding: 1.1rem 1.2rem 1.6rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.dd-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  border-bottom: 1px dashed hsl(var(--retro-brown) / 0.3);
+  padding-bottom: 0.4rem;
+}
+.dd-label {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: hsl(var(--retro-brown));
+  min-width: 3.5rem;
+}
+.dd-val {
+  font-size: 0.9rem;
+  color: hsl(var(--muted-foreground));
+}
+.dd-body {
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 0.15rem;
+  min-height: 3.4rem;
+}
+.dd-line {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: hsl(var(--foreground));
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+/* Space Mono is monospaced, so ch widths and steps() land exactly on glyphs. */
+.dd-l1 {
+  animation: dd-type1 8s steps(27) infinite;
+}
+.dd-l2 {
+  border-right: 2px solid hsl(var(--burnt-orange));
+  animation:
+    dd-type2 8s steps(26) infinite,
+    dd-caret 0.9s step-end infinite;
+}
+@keyframes dd-type1 {
+  0% { width: 0; }
+  22% { width: 27ch; }
+  86% { width: 27ch; }
+  92%, 100% { width: 0; }
+}
+@keyframes dd-type2 {
+  0%, 24% { width: 0; }
+  48% { width: 26ch; }
+  86% { width: 26ch; }
+  92%, 100% { width: 0; }
+}
+@keyframes dd-caret {
+  50% { border-color: transparent; }
+}
+.dd-pill {
+  position: absolute;
+  bottom: clamp(0.9rem, 3.5vw, 2rem);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 9999px;
+  background: hsl(17 40% 9%);
+  border: 1px solid hsl(var(--teal) / 0.35);
+  box-shadow: 0 8px 22px hsl(17 40% 4% / 0.5);
+}
+.dd-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+}
+.dd-bars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 20px;
+}
+.dd-bars i {
+  width: 3px;
+  height: 40%;
+  border-radius: 2px;
+  background: hsl(var(--teal));
+  animation: dd-bar 1s ease-in-out infinite;
+}
+.dd-bars i:nth-child(1) { animation-delay: 0s; }
+.dd-bars i:nth-child(2) { animation-delay: 0.15s; }
+.dd-bars i:nth-child(3) { animation-delay: 0.3s; }
+.dd-bars i:nth-child(4) { animation-delay: 0.45s; }
+.dd-bars i:nth-child(5) { animation-delay: 0.6s; }
+@keyframes dd-bar {
+  0%, 100% { height: 25%; }
+  50% { height: 90%; }
+}
+.dd-rec {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: hsl(var(--burnt-orange));
+  animation: dd-rec 1.6s ease-in-out infinite;
+}
+@keyframes dd-rec {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.dd-hint {
+  position: absolute;
+  bottom: clamp(0.9rem, 3.5vw, 2rem);
+  left: 50%;
+  transform: translate(-50%, 2.6rem);
+  color: hsl(var(--cream) / 0.6);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dd-l1 { width: 27ch; animation: none; }
+  .dd-l2 { width: 26ch; animation: none; border-right-color: hsl(var(--burnt-orange)); }
+  .dd-bars i { height: 55%; animation: none; }
+  .dd-rec { animation: none; }
+}
+
+/* The .crt-screen img{width:100%;height:100%} rule (for real screenshots) must
+   not swallow the small mark inside the animated pill. */
+.crt-screen .dd-scene .dd-mark {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* ---------- animated meeting transcript scene (story 2) ---------- */
+.tx-scene {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(0.9rem, 2.5vw, 1.6rem);
+  gap: 0.7rem;
+  background:
+    radial-gradient(120% 120% at 50% 0%, hsl(var(--retro-brown) / 0.22), transparent 60%),
+    hsl(var(--foreground));
+}
+.tx-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px dashed hsl(var(--cream) / 0.16);
+}
+.tx-title {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: hsl(var(--cream) / 0.9);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tx-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex: none;
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: hsl(var(--burnt-orange));
+}
+.tx-live i {
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: hsl(var(--burnt-orange));
+  animation: dd-rec 1.6s ease-in-out infinite;
+}
+.tx-feed {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.tx-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  max-width: 78%;
+  opacity: 0;
+  /* One 12s cycle, staggered by phase via negative delays so it re-staggers
+     on every loop (positive delays would bunch after the first pass). */
+  animation: tx-msg 12s ease-out infinite;
+}
+.tx-a {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+.tx-b {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+.tx-m1 { animation-delay: 0s; }
+.tx-m2 { animation-delay: -10.4s; }
+.tx-m3 { animation-delay: -8.8s; }
+.tx-m4 { animation-delay: -7.2s; }
+.tx-tag {
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.tx-a .tx-tag { color: hsl(var(--teal)); }
+.tx-b .tx-tag { color: hsl(var(--mustard)); }
+.tx-bubble {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  padding: 0.5rem 0.75rem;
+  border-radius: 12px;
+  color: hsl(var(--cream) / 0.92);
+}
+.tx-a .tx-bubble {
+  background: hsl(var(--teal) / 0.22);
+  border: 1px solid hsl(var(--teal) / 0.4);
+  border-bottom-right-radius: 4px;
+}
+.tx-b .tx-bubble {
+  background: hsl(var(--cream) / 0.08);
+  border: 1px solid hsl(var(--cream) / 0.16);
+  border-bottom-left-radius: 4px;
+}
+@keyframes tx-msg {
+  0% { opacity: 0; transform: translateY(9px); }
+  5% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  96%, 100% { opacity: 0; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tx-row { opacity: 1; animation: none; }
+  .tx-live i { animation: none; }
+}

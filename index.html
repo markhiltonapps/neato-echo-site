@@ -137,16 +137,30 @@
               </li>
             </ul>
           </div>
-          <figure class="crt">
+          <figure class="crt" aria-label="Dictating into an email: the floating Echo pill listens while words appear at the cursor">
             <div class="crt-bar" aria-hidden="true">
               <i></i><i></i><i></i>
               <span class="micro">Dictation</span>
             </div>
             <div class="crt-screen scanlines">
-              <img src="assets/shots/dictation.png" alt="Echo's dictation pill listening, with text appearing in another app" />
-              <div class="crt-empty">
-                <img class="wave" src="assets/echo-mark.svg" alt="" />
-                <span class="micro">Screenshot coming soon</span>
+              <div class="dd-scene" aria-hidden="true">
+                <div class="dd-app">
+                  <div class="dd-head">
+                    <span class="dd-label">To</span><span class="dd-val">Alex Rivera</span>
+                  </div>
+                  <div class="dd-head">
+                    <span class="dd-label">Subject</span><span class="dd-val">Project update</span>
+                  </div>
+                  <div class="dd-body">
+                    <span class="dd-line dd-l1">Thanks for the update. I've</span>
+                    <span class="dd-line dd-l2">reviewed it &mdash; looks great.</span>
+                  </div>
+                </div>
+                <div class="dd-pill">
+                  <img class="dd-mark" src="assets/echo-mark.svg" alt="" width="22" height="22" />
+                  <span class="dd-bars"><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="dd-rec"></span>
+                </div>
               </div>
             </div>
           </figure>
@@ -179,16 +193,23 @@
               </li>
             </ul>
           </div>
-          <figure class="crt">
+          <figure class="crt" aria-label="A live meeting transcript building up, with two speaker labels">
             <div class="crt-bar" aria-hidden="true">
               <i></i><i></i><i></i>
-              <span class="micro">Meeting detected</span>
+              <span class="micro">Meeting transcript</span>
             </div>
             <div class="crt-screen scanlines">
-              <img src="assets/shots/meeting.png" alt="The meeting-detected card offering to take notes, and a live transcript" />
-              <div class="crt-empty">
-                <img class="wave" src="assets/echo-mark.svg" alt="" />
-                <span class="micro">Screenshot coming soon</span>
+              <div class="tx-scene" aria-hidden="true">
+                <div class="tx-head">
+                  <span class="tx-title">Align the team on this week</span>
+                  <span class="tx-live"><i></i>Recording</span>
+                </div>
+                <div class="tx-feed">
+                  <div class="tx-row tx-a tx-m1"><span class="tx-tag">Speaker 1</span><span class="tx-bubble">Let's kick off with a few quick reminders.</span></div>
+                  <div class="tx-row tx-b tx-m2"><span class="tx-tag">Speaker 2</span><span class="tx-bubble">Sounds good, go ahead.</span></div>
+                  <div class="tx-row tx-a tx-m3"><span class="tx-tag">Speaker 1</span><span class="tx-bubble">Please follow up with the new customers this week.</span></div>
+                  <div class="tx-row tx-b tx-m4"><span class="tx-tag">Speaker 2</span><span class="tx-bubble">On it — I'll send the list this afternoon.</span></div>
+                </div>
               </div>
             </div>
           </figure>
