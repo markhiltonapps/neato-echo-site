@@ -23,7 +23,7 @@ const SITE_URL = "https://echo.neatoventures.com";
 const NAV = [
   {
     group: "Start here",
-    pages: ["index", "quickstart", "faq", "help/getting-help"],
+    pages: ["index", "quickstart", "install-step-by-step", "faq", "help/getting-help"],
   },
   {
     group: "Dictation",
