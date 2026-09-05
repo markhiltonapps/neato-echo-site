@@ -95,8 +95,35 @@ default.</p>
 <p><strong>3. Make sure a language model is downloaded.</strong> The agent runs on the local
 model from <strong>Settings → Language Models</strong> (<strong>Qwen 3.5 4B</strong> is the recommended
 default). Until one is downloaded, the agent has nothing to think with.</p>
+<h2 id="two-ways-to-start-it"><a class="anchor" href="#two-ways-to-start-it" aria-label="Link to this section">Two ways to start it</a></h2>
+<p>There is no always-on wake word — the agent only hears you while a recording is
+running. There are two ways to start one:</p>
+<ol class="doc-steps">
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">1</span><h3 class="doc-step-title">Say its name while dictating</h3><div class="doc-step-body">
+
+<p>Press your <strong>dictation</strong> shortcut (Ctrl + Win by default), then say
+&quot;Hey Echo&quot; and your instruction, for example <em>&quot;Hey Echo, put this in a
+list.&quot;</em> The app transcribes it, sees the name at the front, removes it, and
+treats the rest as an instruction. Saying &quot;Hey Echo&quot; on its own, with
+nothing recording, does nothing — that is the mistake most people make first.</p>
+</div></li>
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">2</span><h3 class="doc-step-title">Or give it its own key</h3><div class="doc-step-body">
+
+<p>Set a <strong>Voice Agent Hotkey</strong> in <strong>Settings</strong>, then <strong>Hotkeys</strong>. Press it,
+speak your request, and skip the name entirely. This is the quickest way once
+you use the agent often.</p>
+</div></li>
+
+
+</ol>
+
+
 <h2 id="using-it"><a class="anchor" href="#using-it" aria-label="Link to this section">Using it</a></h2>
-<p>Press the hotkey and speak. You don&#39;t need to say the agent&#39;s name first — the
+<p>Press the hotkey (or say the name while dictating) and speak. You don&#39;t need to say the agent&#39;s name first — the
 hotkey already means &quot;this is an instruction&quot;. The app&#39;s examples:</p>
 <ul>
 <li><em>&quot;Translate to Italian: I talk faster than I type&quot;</em></li>
@@ -106,6 +133,21 @@ Mark&quot;</em></li>
 </ul>
 <p>The result is typed wherever your cursor is, exactly like dictation — you can
 use it inside an email, a document, a chat box.</p>
+<h2 id="how-fast-it-is"><a class="anchor" href="#how-fast-it-is" aria-label="Link to this section">How fast it is</a></h2>
+<p>The agent runs a local language model, so speed depends on your PC. Two things
+shape it:</p>
+<ul>
+<li><strong>The first request after you open the app is the slowest</strong> — the model
+(about 2.7 GB) has to load into memory before it can answer. After that it
+stays loaded and answers are quicker.</li>
+<li><strong>Turn on GPU acceleration.</strong> On the Home screen, click <strong>Enable GPU</strong> if the
+banner offers it. The model runs several times faster on a graphics card than
+on the processor, and the assistant carries more instructions than plain
+dictation, so this helps it most.</li>
+</ul>
+<p>A short request on a warm model with GPU on is typically a few seconds. If it is
+much slower than that, <a href="/docs/help/getting-help.html">tell us</a> — include your PC&#39;s
+processor and graphics card.</p>
 <h2 id="editing-text-you39ve-already-written"><a class="anchor" href="#editing-text-you39ve-already-written" aria-label="Link to this section">Editing text you&#39;ve already written</a></h2>
 <p>Select some text first, then press the hotkey and say what you want changed —
 <em>&quot;make this more formal&quot;</em>, <em>&quot;turn this into bullet points&quot;</em>, <em>&quot;fix the typos&quot;</em>.
@@ -187,7 +229,7 @@ the image.</p>
         </section>
         </article>
       </main>
-<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#setting-it-up">Setting it up</a></li><li class="toc-2"><a href="#using-it">Using it</a></li><li class="toc-2"><a href="#editing-text-you39ve-already-written">Editing text you&amp;#39;ve already written</a></li><li class="toc-2"><a href="#sharing-your-screen-as-context">Sharing your screen as context</a></li><li class="toc-2"><a href="#choosing-where-it-runs">Choosing where it runs</a></li><li class="toc-2"><a href="#its-instructions">Its instructions</a></li><li class="toc-2"><a href="#if-nothing-happens">If nothing happens</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
+<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#setting-it-up">Setting it up</a></li><li class="toc-2"><a href="#two-ways-to-start-it">Two ways to start it</a></li><li class="toc-2"><a href="#using-it">Using it</a></li><li class="toc-2"><a href="#how-fast-it-is">How fast it is</a></li><li class="toc-2"><a href="#editing-text-you39ve-already-written">Editing text you&amp;#39;ve already written</a></li><li class="toc-2"><a href="#sharing-your-screen-as-context">Sharing your screen as context</a></li><li class="toc-2"><a href="#choosing-where-it-runs">Choosing where it runs</a></li><li class="toc-2"><a href="#its-instructions">Its instructions</a></li><li class="toc-2"><a href="#if-nothing-happens">If nothing happens</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
     </div>
 
 

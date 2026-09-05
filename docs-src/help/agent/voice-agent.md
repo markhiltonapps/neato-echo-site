@@ -23,9 +23,29 @@ default.
 model from **Settings → Language Models** (**Qwen 3.5 4B** is the recommended
 default). Until one is downloaded, the agent has nothing to think with.
 
+## Two ways to start it
+
+There is no always-on wake word — the agent only hears you while a recording is
+running. There are two ways to start one:
+
+<Steps>
+  <Step title="Say its name while dictating">
+    Press your **dictation** shortcut (Ctrl + Win by default), then say
+    "Hey Echo" and your instruction, for example *"Hey Echo, put this in a
+    list."* The app transcribes it, sees the name at the front, removes it, and
+    treats the rest as an instruction. Saying "Hey Echo" on its own, with
+    nothing recording, does nothing — that is the mistake most people make first.
+  </Step>
+  <Step title="Or give it its own key">
+    Set a **Voice Agent Hotkey** in **Settings**, then **Hotkeys**. Press it,
+    speak your request, and skip the name entirely. This is the quickest way once
+    you use the agent often.
+  </Step>
+</Steps>
+
 ## Using it
 
-Press the hotkey and speak. You don't need to say the agent's name first — the
+Press the hotkey (or say the name while dictating) and speak. You don't need to say the agent's name first — the
 hotkey already means "this is an instruction". The app's examples:
 
 * *"Translate to Italian: I talk faster than I type"*
@@ -35,6 +55,23 @@ hotkey already means "this is an instruction". The app's examples:
 
 The result is typed wherever your cursor is, exactly like dictation — you can
 use it inside an email, a document, a chat box.
+
+## How fast it is
+
+The agent runs a local language model, so speed depends on your PC. Two things
+shape it:
+
+* **The first request after you open the app is the slowest** — the model
+  (about 2.7 GB) has to load into memory before it can answer. After that it
+  stays loaded and answers are quicker.
+* **Turn on GPU acceleration.** On the Home screen, click **Enable GPU** if the
+  banner offers it. The model runs several times faster on a graphics card than
+  on the processor, and the assistant carries more instructions than plain
+  dictation, so this helps it most.
+
+A short request on a warm model with GPU on is typically a few seconds. If it is
+much slower than that, [tell us](/help/getting-help) — include your PC's
+processor and graphics card.
 
 ## Editing text you've already written
 
