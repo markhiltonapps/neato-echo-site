@@ -138,9 +138,49 @@ to a device you aren&#39;t speaking into, it hears nothing. See
 don&#39;t depend on hearing anything at all, which makes them the most reliable
 trigger — see
 <a href="/docs/help/meetings/connect-your-calendar.html">connect Google or Microsoft calendar</a>.</li>
+<li><strong>Close apps that hold your microphone open all the time</strong> — see the next
+section, which is the cause people miss most often.</li>
 </ol>
 <p>If it still never fires, start the note by hand with the Meeting Mode Hotkey
 and <a href="/docs/help/getting-help.html">tell us</a> — that&#39;s a bug worth hearing about.</p>
+<h2 id="an-app-that-never-lets-go-of-the-microphone"><a class="anchor" href="#an-app-that-never-lets-go-of-the-microphone" aria-label="Link to this section">An app that never lets go of the microphone</a></h2>
+<p>Microphone detection works by noticing the microphone go from <strong>idle</strong> to <strong>in
+use</strong> — that change is what says &quot;a call just started.&quot; A few kinds of program
+hold the microphone open the entire time they are running, so from Neato Echo&#39;s
+point of view the microphone is <em>never</em> idle, the change never happens, and the
+prompt never appears.</p>
+<p>Programs that commonly do this:</p>
+<ul>
+<li><strong>Voice changers</strong> (for example MorphVOX) and virtual-microphone tools</li>
+<li><strong>Streaming and recording software</strong> (for example OBS) while it is live or armed</li>
+<li><strong>Some &quot;AI meeting assistant&quot; or transcription apps</strong> that listen continuously</li>
+<li><strong>Audio routing utilities</strong> (for example VoiceMeeter) that keep a capture open</li>
+</ul>
+<aside class="callout callout-note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><div class="callout-body">
+
+<p>This is not about a specific product — it is about <em>any</em> app that keeps the
+microphone open continuously. If your meeting prompt never shows up, this is
+the most likely reason after the switches and the microphone selection.</p>
+</div></aside>
+
+
+<p><strong>How to tell if this is your problem:</strong> close the suspect app completely
+(quit it, don&#39;t just minimize it — check the system tray by the clock and quit
+it there too), then start a call and talk for a few seconds. If the prompt now
+appears, that app was holding the microphone.</p>
+<p><strong>What to do about it:</strong></p>
+<ul>
+<li>If you don&#39;t need the app during meetings, quit it before your call.</li>
+<li>If you <em>do</em> need it (a voice changer you always use, say), you don&#39;t have to
+give it up — just <strong>start the note by hand</strong> with the
+<a href="/docs/help/meetings/record-a-meeting.html">Meeting Mode Hotkey</a> (Ctrl + Alt + M by
+default) instead of waiting for the automatic prompt. Connecting your
+<a href="/docs/help/meetings/connect-your-calendar.html">calendar</a> also sidesteps it entirely,
+because calendar prompts don&#39;t depend on the microphone at all.</li>
+</ul>
+<p>A future update improves this so a new call is noticed even while another app is
+holding the microphone, but starting by hand or using the calendar always works
+today.</p>
 <h2 id="related"><a class="anchor" href="#related" aria-label="Link to this section">Related</a></h2>
 <ul>
 <li><a href="/docs/help/meetings/record-a-meeting.html">Record a meeting</a></li>
@@ -161,7 +201,7 @@ and <a href="/docs/help/getting-help.html">tell us</a> — that&#39;s a bug wort
         </section>
         </article>
       </main>
-<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#what-actually-triggers-the-prompt">What actually triggers the prompt</a></li><li class="toc-2"><a href="#when-the-prompt-says-different-things">When the prompt says different things</a></li><li class="toc-2"><a href="#when-it-stays-quiet-on-purpose">When it stays quiet on purpose</a></li><li class="toc-2"><a href="#turning-it-off">Turning it off</a></li><li class="toc-2"><a href="#if-you-never-get-a-prompt">If you never get a prompt</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
+<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#what-actually-triggers-the-prompt">What actually triggers the prompt</a></li><li class="toc-2"><a href="#when-the-prompt-says-different-things">When the prompt says different things</a></li><li class="toc-2"><a href="#when-it-stays-quiet-on-purpose">When it stays quiet on purpose</a></li><li class="toc-2"><a href="#turning-it-off">Turning it off</a></li><li class="toc-2"><a href="#if-you-never-get-a-prompt">If you never get a prompt</a></li><li class="toc-2"><a href="#an-app-that-never-lets-go-of-the-microphone">An app that never lets go of the microphone</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
     </div>
 
 

@@ -78,9 +78,51 @@ Work through these in order:
    don't depend on hearing anything at all, which makes them the most reliable
    trigger — see
    [connect Google or Microsoft calendar](/help/meetings/connect-your-calendar).
+5. **Close apps that hold your microphone open all the time** — see the next
+   section, which is the cause people miss most often.
 
 If it still never fires, start the note by hand with the Meeting Mode Hotkey
 and [tell us](/help/getting-help) — that's a bug worth hearing about.
+
+## An app that never lets go of the microphone
+
+Microphone detection works by noticing the microphone go from **idle** to **in
+use** — that change is what says "a call just started." A few kinds of program
+hold the microphone open the entire time they are running, so from Neato Echo's
+point of view the microphone is *never* idle, the change never happens, and the
+prompt never appears.
+
+Programs that commonly do this:
+
+* **Voice changers** (for example MorphVOX) and virtual-microphone tools
+* **Streaming and recording software** (for example OBS) while it is live or armed
+* **Some "AI meeting assistant" or transcription apps** that listen continuously
+* **Audio routing utilities** (for example VoiceMeeter) that keep a capture open
+
+<Note>
+  This is not about a specific product — it is about *any* app that keeps the
+  microphone open continuously. If your meeting prompt never shows up, this is
+  the most likely reason after the switches and the microphone selection.
+</Note>
+
+**How to tell if this is your problem:** close the suspect app completely
+(quit it, don't just minimize it — check the system tray by the clock and quit
+it there too), then start a call and talk for a few seconds. If the prompt now
+appears, that app was holding the microphone.
+
+**What to do about it:**
+
+* If you don't need the app during meetings, quit it before your call.
+* If you *do* need it (a voice changer you always use, say), you don't have to
+  give it up — just **start the note by hand** with the
+  [Meeting Mode Hotkey](/help/meetings/record-a-meeting) (Ctrl + Alt + M by
+  default) instead of waiting for the automatic prompt. Connecting your
+  [calendar](/help/meetings/connect-your-calendar) also sidesteps it entirely,
+  because calendar prompts don't depend on the microphone at all.
+
+A future update improves this so a new call is noticed even while another app is
+holding the microphone, but starting by hand or using the calendar always works
+today.
 
 ## Related
 
