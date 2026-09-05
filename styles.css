@@ -1662,3 +1662,122 @@ section {
   .ha-r1 { width: 28ch; animation: none; }
   .ha-r2 { width: 32ch; animation: none; border-right-color: hsl(var(--burnt-orange)); }
 }
+
+/* ---------- hero rotating value props ---------- */
+.hero-rotator {
+  position: relative;
+  height: 1.9rem;
+  margin-top: 0.25rem;
+}
+.hero-rot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(0.85rem, 0.7rem + 0.5vw, 1.05rem);
+  letter-spacing: 0.01em;
+  color: hsl(var(--foreground));
+  white-space: nowrap;
+  opacity: 0;
+  animation: hero-rotate 15s ease-in-out infinite;
+}
+.hero-rot::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: hsl(var(--teal));
+  transform: rotate(45deg);
+  flex: none;
+}
+.hero-rot-1 { animation-delay: 0s; }
+.hero-rot-2 { animation-delay: -11.25s; }
+.hero-rot-2::before { background: hsl(var(--burnt-orange)); }
+.hero-rot-3 { animation-delay: -7.5s; }
+.hero-rot-4 { animation-delay: -3.75s; }
+@keyframes hero-rotate {
+  0% { opacity: 0; transform: translateY(9px); }
+  2.5% { opacity: 1; transform: translateY(0); }
+  22% { opacity: 1; transform: translateY(0); }
+  25% { opacity: 0; transform: translateY(-9px); }
+  100% { opacity: 0; transform: translateY(-9px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-rotator { height: auto; display: grid; gap: 0.35rem; }
+  .hero-rot { position: static; opacity: 1; transform: none; animation: none; white-space: normal; }
+}
+
+/* Narrow screens: let the longest value prop wrap instead of clipping. */
+@media (max-width: 640px) {
+  .hero-rotator { height: 3.1rem; }
+  .hero-rot { white-space: normal; line-height: 1.22; align-items: flex-start; }
+  .hero-rot::before { margin-top: 0.32rem; }
+}
+
+/* ---------- hero "pay once" pill ---------- */
+.hero-once {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  border: 2px solid hsl(var(--retro-brown));
+  background: hsl(var(--mustard) / 0.28);
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: hsl(var(--foreground));
+}
+.hero-once-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: hsl(var(--burnt-orange));
+  animation: dd-rec 1.8s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-once-dot { animation: none; }
+}
+
+/* ---------- meeting-app chips ---------- */
+.app-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+.app-chip {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0.7rem;
+  border-radius: 4px;
+  border: 2px solid hsl(var(--border));
+  background: hsl(var(--card));
+  color: hsl(var(--muted-foreground));
+}
+.app-chip-free {
+  border-color: hsl(var(--teal));
+  color: hsl(var(--foreground));
+  background: hsl(var(--teal) / 0.16);
+}
+
+/* ---------- pricing emphasis ---------- */
+.price-big {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 0.9rem + 1vw, 1.5rem);
+  color: hsl(var(--foreground));
+  letter-spacing: 0.02em;
+}
+.price-big span {
+  color: hsl(var(--burnt-orange));
+  font-size: 1.25em;
+}
