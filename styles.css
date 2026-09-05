@@ -1257,6 +1257,66 @@ section {
   }
 }
 
+/* ---------- wearable coming-soon band ---------- */
+#wearable .roadmap-lede { color: hsl(var(--cream) / 0.82); }
+#wearable .roadmap-facts { border-top-color: hsl(var(--cream) / 0.28); }
+#wearable .roadmap-facts > div { border-bottom-color: hsl(var(--cream) / 0.28); }
+#wearable .roadmap-facts dt { color: hsl(var(--mustard)); }
+#wearable .roadmap-facts dd { color: hsl(var(--cream) / 0.78); }
+#wearable .btn-outline {
+  border-color: hsl(var(--cream) / 0.55);
+  color: hsl(var(--cream));
+}
+#wearable .btn-outline:hover {
+  background: hsl(var(--cream) / 0.12);
+  border-color: hsl(var(--cream));
+}
+.wearable-stage {
+  position: relative;
+  margin: 0;
+  width: min(30rem, 100%);
+  justify-self: center;
+}
+.wearable-frame {
+  position: relative;
+  border: 2px solid hsl(var(--cream) / 0.5);
+  border-radius: 12px;
+  overflow: hidden;
+  background: hsl(var(--cream));
+  box-shadow: 10px 10px 0 hsl(17 40% 20% / 0.55);
+}
+.wearable-lapel { display: block; width: 100%; height: auto; }
+.wearable-chip {
+  position: absolute;
+  right: 1rem;
+  bottom: -1.1rem;
+  width: clamp(78px, 24%, 128px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  background: hsl(var(--cream));
+  border: 2px solid hsl(var(--retro-brown));
+  border-radius: 50%;
+  box-shadow: 5px 5px 0 hsl(17 40% 20% / 0.55);
+}
+.wearable-chip img { width: 76%; height: 76%; object-fit: contain; }
+.wearable-rec {
+  position: absolute;
+  top: 10%;
+  right: 13%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: hsl(var(--burnt-orange));
+  animation: dd-rec 1.8s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .wearable-rec { animation: none; }
+}
+@media (min-width: 900px) {
+  .roadmap-flip { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+
 /* ---------- animated dictation scene (story 1) ---------- */
 .dd-scene {
   position: absolute;
