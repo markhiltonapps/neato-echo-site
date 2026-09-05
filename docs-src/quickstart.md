@@ -29,7 +29,7 @@ description: Get Neato Echo running on your Windows PC in a few minutes.
   </Step>
 
   <Step title="Pick Tap or Hold">
-    The dictation hotkey is **Ctrl+Win**. Choose whether to **tap** it once to start and again to stop, or **hold** it while you speak. You can change this later under **Settings → Hotkeys**. See [hold or tap](/help/dictation/hold-or-tap).
+    The dictation hotkey is **Ctrl+Win**. Choose whether to **tap** it once to start and again to stop, or **hold** it while you speak. Setup then asks for a meeting shortcut (**Ctrl+Alt+M** recommended) that starts meeting notes from any call. You can change both later under **Settings → Hotkeys**. See [hold or tap](/help/dictation/hold-or-tap).
   </Step>
 
   <Step title="Start dictating">

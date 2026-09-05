@@ -12,7 +12,8 @@ Press your **Meeting Mode Hotkey**. That opens meeting mode and begins a note
 straight away — useful when the prompt didn't appear, or when you're recording
 something that isn't a call at all, like a lecture or an interview.
 
-The meeting hotkey isn't set until you choose one. Open **Settings**, then
+Setup asks for the meeting hotkey right after your dictation shortcut, and
+recommends **Ctrl + Alt + M**. To change it later, open **Settings**, then
 **Hotkeys**, and look for **Meeting Mode Hotkey**. The same panel has a
 **When triggered by hotkey, open in:** choice — **Full width** or
 **Side panel** — which decides how the meeting view appears when you use the

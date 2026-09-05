@@ -8,8 +8,8 @@ wins, and Neato Echo is told it can't have it.
 
 Every hotkey lives in **Settings** → **Hotkeys** under **App**. That section
 holds **Dictation Hotkey** and the separate shortcuts for **Voice Agent**,
-**Translation** and **Meeting** recording. Only the dictation hotkey is set out
-of the box; the other three stay empty until you choose them.
+**Translation** and **Meeting** recording. Setup sets the dictation and meeting
+hotkeys; the other two stay empty until you choose them.
 
 ## The default
 

@@ -19,9 +19,10 @@ They all live in one place: open **Settings**, then **Hotkeys** under **App**.
 | **Meeting Mode Hotkey** | Starts meeting mode and snaps the panel to the screen edge. | No              |
 | **Chat Agent Hotkey**   | Opens and closes the chat agent overlay.                    | No              |
 
-Only the **Dictation Hotkey** is set out of the box and it's the only one you
-can't leave empty. The other four are blank until you choose a key, and clearing
-one switches that feature off rather than breaking it.
+Setup asks for the **Dictation Hotkey** (Ctrl + Win recommended) and the
+**Meeting Mode Hotkey** (Ctrl + Alt + M recommended). The dictation one is the
+only one you can't leave empty. The others are blank until you choose a key, and
+clearing one switches that feature off rather than breaking it.
 
 <Note>
   The distinction that catches people out is between the first two. Dictation
