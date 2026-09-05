@@ -80,7 +80,7 @@
             <p class="doc-lede">Every screen you will see from the download to your first dictation, with pictures.</p>
           </header>
           <div class="doc-body">
-<p>This is the whole first-run, screen by screen. It takes about ten minutes, most of it waiting for two downloads. The pictures are from version 1.0.5; newer versions have polished a few words and highlight the recommended models, but the choices are the same.</p>
+<p>This is the whole first-run, screen by screen. It takes about ten minutes, most of it waiting for two downloads. The pictures are from version 1.1.2.</p>
 <h2 id="before-you-start"><a class="anchor" href="#before-you-start" aria-label="Link to this section">Before you start</a></h2>
 <ul>
 <li>A Windows 10 or 11 PC (64-bit) with about 5 GB of free disk space.</li>
@@ -123,19 +123,20 @@
 <h2 id="7-tap-or-hold"><a class="anchor" href="#7-tap-or-hold" aria-label="Link to this section">7. Tap or hold</a></h2>
 <p>Choose what a press does. <strong>Tap</strong> starts listening on one press and stops on the next, which suits longer dictation. <strong>Hold</strong> listens only while you keep the keys down, like a walkie-talkie. You can change this later in Settings, Hotkeys. Click <strong>Continue</strong>.</p>
 <p><img src="/docs/assets/howto/10-tap-or-hold.png" alt="How should your shortcut work? Mode: Tap or Hold."></p>
-<h2 id="8-choose-where-neato-echo-thinks"><a class="anchor" href="#8-choose-where-neato-echo-thinks" aria-label="Link to this section">8. Choose where Neato Echo thinks</a></h2>
+<h2 id="8-pick-your-meeting-shortcut"><a class="anchor" href="#8-pick-your-meeting-shortcut" aria-label="Link to this section">8. Pick your meeting shortcut</a></h2>
+<p>This key starts meeting notes from inside any call, without opening the app. The recommended shortcut is <strong>Ctrl + Alt + M</strong>, which is free in Zoom, Teams, and Meet. Press the keys you want to use.</p>
+<p><img src="/docs/assets/howto/10b-meeting-shortcut.png" alt="Set up your meeting shortcut. Recommended Ctrl + Alt + M. Press the keys you want to use."></p>
+<h2 id="9-choose-where-neato-echo-thinks"><a class="anchor" href="#9-choose-where-neato-echo-thinks" aria-label="Link to this section">9. Choose where Neato Echo thinks</a></h2>
 <p>Choose <strong>Set up on this PC</strong>. Everything you say stays on your machine, there is no account, and it works offline once the downloads finish. The <strong>Advanced</strong> option is for people who want to use their own API key with a cloud provider instead; see <a href="/docs/guides/cloud-vs-local.html">Cloud vs local processing</a>.</p>
 <p><img src="/docs/assets/howto/11-where-it-thinks.png" alt="Where should Neato Echo do its thinking? On this PC, recommended, with a Set up on this PC button."></p>
-<p>A short explanation appears: one speech model, one summary model, then wait. Click <strong>Start the download</strong>.</p>
-<p><img src="/docs/assets/howto/12-one-download.png" alt="One download, then it works offline. Pick the speech model, pick a summary model, wait for the downloads to finish."></p>
-<h2 id="9-download-the-speech-model"><a class="anchor" href="#9-download-the-speech-model" aria-label="Link to this section">9. Download the speech model</a></h2>
-<p>Pick one model and click <strong>Download</strong>. The recommended one is marked and works for every language. If you dictate only in English and want to see the words appear while you are still talking, choose <strong>Nemotron Speech Streaming EN</strong> instead. You can switch later in Settings, Speech-to-Text.</p>
-<p><img src="/docs/assets/howto/13-speech-model.png" alt="Download your models, Speech step. NVIDIA provider with Parakeet TDT 0.6B recommended, Nemotron Speech Streaming downloading."></p>
-<p>When the download finishes the row shows <strong>Selected</strong>. Click <strong>Proceed</strong>.</p>
-<h2 id="10-download-the-summary-model"><a class="anchor" href="#10-download-the-summary-model" aria-label="Link to this section">10. Download the summary model</a></h2>
-<p>This model writes your meeting summaries and answers the assistant. <strong>Qwen 3.5 4B</strong> is the recommended one for most PCs. Click <strong>Download</strong>, wait, then <strong>Proceed</strong>. This one is about 2.7 GB, so it is the long wait.</p>
-<p><img src="/docs/assets/howto/14-summary-model.png" alt="Download your models, Summaries step. Qwen provider with Qwen3.5 4B recommended."></p>
-<p><img src="/docs/assets/howto/15-summary-downloading.png" alt="The same screen while Qwen3.5 4B is downloading, with a progress bar at the bottom right."></p>
+<p>A short explanation appears: a speech model chosen for your language, a summary model sized for this PC, and about 5 GB of free space between them. Click <strong>Start the download</strong>.</p>
+<p><img src="/docs/assets/howto/12-one-download.png" alt="One download, then it works offline: a speech model of about 650 MB, then a summary model of about 2.7 GB. Start the download button."></p>
+<h2 id="10-wait-while-your-pc-gets-ready"><a class="anchor" href="#10-wait-while-your-pc-gets-ready" aria-label="Link to this section">10. Wait while your PC gets ready</a></h2>
+<p>Neato Echo picks both models for you and downloads them at the same time. Nothing to choose here. The two rows show progress, and a small panel at the bottom right tracks each download.</p>
+<p><img src="/docs/assets/howto/13-getting-ready.png" alt="Getting your PC ready. Speech at 58 percent, Summaries at 0 percent, one progress bar, a disabled Downloading button."></p>
+<p>The summary model is about 2.7 GB, so this is the long wait. You can click <strong>Continue now</strong> to go ahead while it finishes in the background; the models switch on by themselves when done. <strong>Advanced: choose different models</strong> opens the full picker if you know you want something else.</p>
+<p>When both rows say <strong>Ready</strong>, click <strong>Start using Neato Echo</strong>.</p>
+<p><img src="/docs/assets/howto/14-all-set.png" alt="Getting your PC ready. Speech Ready, Summaries Ready, All set. Start using Neato Echo button."></p>
 <h2 id="11-you-are-in"><a class="anchor" href="#11-you-are-in" aria-label="Link to this section">11. You are in</a></h2>
 <p>The Home screen opens. Two things to notice:</p>
 <ul>
@@ -143,7 +144,7 @@
 <li><strong>Connect your calendar</strong>: optional. It titles your meeting notes and lists what is coming up. See <a href="/docs/help/meetings/connect-your-calendar.html">Connect Google or Microsoft calendar</a>.</li>
 </ul>
 <p><img src="/docs/assets/howto/16-home.png" alt="The Neato Echo Home screen: GPU acceleration available, no transcriptions yet, Connect your calendar."></p>
-<p>The &quot;Press … to start&quot; hint under Transcriptions names your dictation shortcut. If it shows a key you did not choose, open Settings, Hotkeys, and set it there.</p>
+<p>The &quot;Press Ctrl+Win to start&quot; hint under Transcriptions names your dictation shortcut.</p>
 <h2 id="12-your-first-dictation"><a class="anchor" href="#12-your-first-dictation" aria-label="Link to this section">12. Your first dictation</a></h2>
 <p>Click into any text box, for example a new email. Press your shortcut, say a sentence, and press it again (or let go, in Hold mode). The words appear at your cursor.</p>
 <p>The very first dictation after install can take longer while the speech model loads. After that it is quick, and with a streaming model the words show up as you speak.</p>
@@ -191,7 +192,7 @@
         </section>
         </article>
       </main>
-<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#before-you-start">Before you start</a></li><li class="toc-2"><a href="#1-download-the-installer">1. Download the installer</a></li><li class="toc-2"><a href="#2-windows-asks-if-you-are-sure">2. Windows asks if you are sure</a></li><li class="toc-2"><a href="#3-choose-who-it-is-for">3. Choose who it is for</a></li><li class="toc-2"><a href="#4-choose-the-folder-and-install">4. Choose the folder and install</a></li><li class="toc-2"><a href="#5-allow-the-microphone-and-screen-context">5. Allow the microphone and screen context</a></li><li class="toc-2"><a href="#6-pick-your-dictation-shortcut">6. Pick your dictation shortcut</a></li><li class="toc-2"><a href="#7-tap-or-hold">7. Tap or hold</a></li><li class="toc-2"><a href="#8-choose-where-neato-echo-thinks">8. Choose where Neato Echo thinks</a></li><li class="toc-2"><a href="#9-download-the-speech-model">9. Download the speech model</a></li><li class="toc-2"><a href="#10-download-the-summary-model">10. Download the summary model</a></li><li class="toc-2"><a href="#11-you-are-in">11. You are in</a></li><li class="toc-2"><a href="#12-your-first-dictation">12. Your first dictation</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
+<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#before-you-start">Before you start</a></li><li class="toc-2"><a href="#1-download-the-installer">1. Download the installer</a></li><li class="toc-2"><a href="#2-windows-asks-if-you-are-sure">2. Windows asks if you are sure</a></li><li class="toc-2"><a href="#3-choose-who-it-is-for">3. Choose who it is for</a></li><li class="toc-2"><a href="#4-choose-the-folder-and-install">4. Choose the folder and install</a></li><li class="toc-2"><a href="#5-allow-the-microphone-and-screen-context">5. Allow the microphone and screen context</a></li><li class="toc-2"><a href="#6-pick-your-dictation-shortcut">6. Pick your dictation shortcut</a></li><li class="toc-2"><a href="#7-tap-or-hold">7. Tap or hold</a></li><li class="toc-2"><a href="#8-pick-your-meeting-shortcut">8. Pick your meeting shortcut</a></li><li class="toc-2"><a href="#9-choose-where-neato-echo-thinks">9. Choose where Neato Echo thinks</a></li><li class="toc-2"><a href="#10-wait-while-your-pc-gets-ready">10. Wait while your PC gets ready</a></li><li class="toc-2"><a href="#11-you-are-in">11. You are in</a></li><li class="toc-2"><a href="#12-your-first-dictation">12. Your first dictation</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
     </div>
 
 

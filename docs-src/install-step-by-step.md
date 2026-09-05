@@ -3,7 +3,7 @@ title: Install, step by step
 description: Every screen you will see from the download to your first dictation, with pictures.
 ---
 
-This is the whole first-run, screen by screen. It takes about ten minutes, most of it waiting for two downloads. The pictures are from version 1.0.5; newer versions have polished a few words and highlight the recommended models, but the choices are the same.
+This is the whole first-run, screen by screen. It takes about ten minutes, most of it waiting for two downloads. The pictures are from version 1.1.2.
 
 ## Before you start
 
@@ -71,31 +71,33 @@ Choose what a press does. **Tap** starts listening on one press and stops on the
 
 ![How should your shortcut work? Mode: Tap or Hold.](/docs/assets/howto/10-tap-or-hold.png)
 
-## 8. Choose where Neato Echo thinks
+## 8. Pick your meeting shortcut
+
+This key starts meeting notes from inside any call, without opening the app. The recommended shortcut is **Ctrl + Alt + M**, which is free in Zoom, Teams, and Meet. Press the keys you want to use.
+
+![Set up your meeting shortcut. Recommended Ctrl + Alt + M. Press the keys you want to use.](/docs/assets/howto/10b-meeting-shortcut.png)
+
+## 9. Choose where Neato Echo thinks
 
 Choose **Set up on this PC**. Everything you say stays on your machine, there is no account, and it works offline once the downloads finish. The **Advanced** option is for people who want to use their own API key with a cloud provider instead; see [Cloud vs local processing](/guides/cloud-vs-local).
 
 ![Where should Neato Echo do its thinking? On this PC, recommended, with a Set up on this PC button.](/docs/assets/howto/11-where-it-thinks.png)
 
-A short explanation appears: one speech model, one summary model, then wait. Click **Start the download**.
+A short explanation appears: a speech model chosen for your language, a summary model sized for this PC, and about 5 GB of free space between them. Click **Start the download**.
 
-![One download, then it works offline. Pick the speech model, pick a summary model, wait for the downloads to finish.](/docs/assets/howto/12-one-download.png)
+![One download, then it works offline: a speech model of about 650 MB, then a summary model of about 2.7 GB. Start the download button.](/docs/assets/howto/12-one-download.png)
 
-## 9. Download the speech model
+## 10. Wait while your PC gets ready
 
-Pick one model and click **Download**. The recommended one is marked and works for every language. If you dictate only in English and want to see the words appear while you are still talking, choose **Nemotron Speech Streaming EN** instead. You can switch later in Settings, Speech-to-Text.
+Neato Echo picks both models for you and downloads them at the same time. Nothing to choose here. The two rows show progress, and a small panel at the bottom right tracks each download.
 
-![Download your models, Speech step. NVIDIA provider with Parakeet TDT 0.6B recommended, Nemotron Speech Streaming downloading.](/docs/assets/howto/13-speech-model.png)
+![Getting your PC ready. Speech at 58 percent, Summaries at 0 percent, one progress bar, a disabled Downloading button.](/docs/assets/howto/13-getting-ready.png)
 
-When the download finishes the row shows **Selected**. Click **Proceed**.
+The summary model is about 2.7 GB, so this is the long wait. You can click **Continue now** to go ahead while it finishes in the background; the models switch on by themselves when done. **Advanced: choose different models** opens the full picker if you know you want something else.
 
-## 10. Download the summary model
+When both rows say **Ready**, click **Start using Neato Echo**.
 
-This model writes your meeting summaries and answers the assistant. **Qwen 3.5 4B** is the recommended one for most PCs. Click **Download**, wait, then **Proceed**. This one is about 2.7 GB, so it is the long wait.
-
-![Download your models, Summaries step. Qwen provider with Qwen3.5 4B recommended.](/docs/assets/howto/14-summary-model.png)
-
-![The same screen while Qwen3.5 4B is downloading, with a progress bar at the bottom right.](/docs/assets/howto/15-summary-downloading.png)
+![Getting your PC ready. Speech Ready, Summaries Ready, All set. Start using Neato Echo button.](/docs/assets/howto/14-all-set.png)
 
 ## 11. You are in
 
@@ -106,7 +108,7 @@ The Home screen opens. Two things to notice:
 
 ![The Neato Echo Home screen: GPU acceleration available, no transcriptions yet, Connect your calendar.](/docs/assets/howto/16-home.png)
 
-The "Press … to start" hint under Transcriptions names your dictation shortcut. If it shows a key you did not choose, open Settings, Hotkeys, and set it there.
+The "Press Ctrl+Win to start" hint under Transcriptions names your dictation shortcut.
 
 ## 12. Your first dictation
 
