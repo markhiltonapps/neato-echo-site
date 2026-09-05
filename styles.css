@@ -1723,6 +1723,163 @@ section {
   .ha-r2 { width: 32ch; animation: none; border-right-color: hsl(var(--burnt-orange)); }
 }
 
+/* ---------- animated meeting-summary scene (story: summaries) ---------- */
+.sm-scene {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(0.9rem, 2.5vw, 1.5rem);
+  gap: 0.75rem;
+  background:
+    radial-gradient(120% 120% at 50% 0%, hsl(var(--retro-brown) / 0.22), transparent 60%),
+    hsl(var(--foreground));
+}
+.sm-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px dashed hsl(var(--cream) / 0.16);
+}
+.sm-preset {
+  font-family: var(--font-display);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: hsl(var(--foreground));
+  background: hsl(var(--mustard));
+  border: 2px solid hsl(var(--retro-brown));
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+}
+.sm-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex: none;
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: hsl(var(--teal));
+}
+.sm-tag i {
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: hsl(var(--teal));
+}
+.sm-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  overflow: hidden;
+}
+.sm-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.sm-label {
+  font-family: var(--font-display);
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: hsl(var(--cream) / 0.5);
+}
+.sm-line {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: hsl(var(--cream) / 0.82);
+}
+.sm-task {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: hsl(var(--cream) / 0.92);
+}
+.sm-check {
+  flex: none;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 5px;
+  background: hsl(var(--teal));
+  border: 1px solid hsl(var(--teal));
+  display: grid;
+  place-items: center;
+}
+.sm-check svg {
+  width: 0.72rem;
+  height: 0.72rem;
+  fill: none;
+  stroke: hsl(var(--foreground));
+  stroke-width: 3.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.sm-task-text {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sm-owner {
+  flex: none;
+  font-family: var(--font-display);
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: hsl(var(--foreground));
+  background: hsl(var(--cream) / 0.85);
+  border-radius: 4px;
+  padding: 0.15rem 0.4rem;
+}
+/* Assembles top to bottom, holds most of the loop, clears, repeats. Stagger is
+   baked into the shared cycle via negative delays so it re-staggers each loop. */
+.sm-b1,
+.sm-b2,
+.sm-t1,
+.sm-t2,
+.sm-t3 {
+  opacity: 0;
+  animation: sm-write 12s ease-out infinite;
+}
+.sm-b1 { animation-delay: 0s; }
+.sm-b2 { animation-delay: -10.6s; }
+.sm-t1 { animation-delay: -9.2s; }
+.sm-t2 { animation-delay: -7.8s; }
+.sm-t3 { animation-delay: -6.4s; }
+@keyframes sm-write {
+  0% { opacity: 0; transform: translateY(8px); }
+  5% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  96%, 100% { opacity: 0; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sm-b1, .sm-b2, .sm-t1, .sm-t2, .sm-t3 { opacity: 1; animation: none; }
+}
+@media (max-width: 640px) {
+  .sm-scene { padding: 0.75rem 0.8rem; gap: 0.5rem; }
+  .sm-head { padding-bottom: 0.45rem; }
+  .sm-body { gap: 0.6rem; }
+  .sm-block { gap: 0.28rem; }
+  .sm-line { font-size: 0.72rem; line-height: 1.34; }
+  .sm-task { font-size: 0.72rem; gap: 0.45rem; }
+  .sm-check { width: 0.92rem; height: 0.92rem; }
+  .sm-check svg { width: 0.62rem; height: 0.62rem; }
+}
+
+
 /* ---------- hero rotating brag billboard ---------- */
 .hero-brag {
   position: relative;
