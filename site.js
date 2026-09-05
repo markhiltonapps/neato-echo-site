@@ -161,10 +161,6 @@
         (installer.size ? " · " + formatSize(installer.size) : "") +
         "</a>";
     }
-    actions +=
-      '<a class="btn btn-outline btn-sm" href="' +
-      release.html_url +
-      '" rel="noopener" target="_blank">View on GitHub</a>';
     return (
       '<article class="release googie-card">' +
       '<div class="release-head"><h3>' +
