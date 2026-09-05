@@ -44,6 +44,65 @@ Rules of thumb:
 | **Wired earbuds with an inline mic**        | Either. Try both and compare                                           |
 | **Laptop on its own**                       | Built-in, which is what you'll get anyway                              |
 
+## My headset sounds thin or quiet while I dictate
+
+This is the most common surprise, and it is worth understanding because the fix
+is quick and the cause is not obvious.
+
+**What you notice:** the moment you start dictating (or recording a meeting), the
+music, video, or call you are listening to gets quieter and thinner, losing its
+bass and fullness. The instant you stop, the rich sound comes back.
+
+**Why it happens:** most headsets — Bluetooth earbuds, USB headsets, and combined
+"headphones + microphone" devices like a dock headset — are a single piece of
+hardware with both a speaker and a microphone. When any app opens that
+microphone, the headset switches its **whole self** into a "communications" or
+"headset" mode built for phone calls: mono, narrow, and quiet. It switches back
+to full, rich stereo the moment the microphone is released. Neato Echo is only
+turning the microphone on to hear you; the headset is the thing choosing to
+downgrade its own sound while the mic is in use.
+
+This is why it happens with plain dictation as well as meeting recording — both
+open the microphone — and why changing Windows sound settings does not stop it.
+It is the headset's own behavior, shared by nearly every combined headset, and
+no app can override it.
+
+**The fix: listen on one device, talk into another.** Keep enjoying audio on the
+headset, but have Neato Echo listen to a *different* microphone so the headset's
+mic is never opened and its sound never downgrades.
+
+<Steps>
+  <Step title="Open the microphone setting">
+    **Settings**, then **Preferences**, then **Input Device**.
+  </Step>
+  <Step title="Pick a microphone that is not your headset">
+    Choose your laptop's built-in microphone (marked **(Built-in)**, often named
+    something like *Microphone Array*) instead of the headset. If you have a
+    separate USB or desk microphone, that works too.
+  </Step>
+  <Step title="Check the level meter">
+    Say a few words and watch the meter move, so you know the new microphone is
+    the one being heard.
+  </Step>
+</Steps>
+
+With the headset's microphone left alone, its speakers stay in full-quality
+stereo the entire time you dictate or record. The built-in microphone is also
+usually better for transcription anyway, for the reasons in the section above.
+
+<Note>
+  **Do not use System Default here.** If your headset is the Windows default
+  device, "System Default" will keep selecting the headset's microphone and the
+  downgrade will keep happening. Pick the built-in microphone explicitly.
+</Note>
+
+<Tip>
+  Only affects what you *hear*, never what gets saved. The transcript and any
+  recorded audio are made from the microphone and are unaffected by the
+  headset's speaker downgrade — this is purely about your own listening
+  experience while the mic is open.
+</Tip>
+
 ## If no microphones are listed
 
 The app will say *"No microphones were detected"* and point you at Windows

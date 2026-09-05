@@ -110,6 +110,75 @@ recognition is worst at. Your laptop&#39;s built-in microphone, unglamorous as i
 is, is a clean wired input at full bandwidth.</p>
 <p>Rules of thumb:</p>
 <div class="table-wrap"><table><thead><tr><th>Setup</th><th>Recommendation</th></tr></thead><tbody><tr><td><strong>Bluetooth headset</strong> (AirPods and similar)</td><td>Prefer the built-in microphone. Use the headset for listening</td></tr><tr><td><strong>Wired USB or XLR microphone</strong></td><td>Use it — this is the case where an external device is genuinely better</td></tr><tr><td><strong>Wired earbuds with an inline mic</strong></td><td>Either. Try both and compare</td></tr><tr><td><strong>Laptop on its own</strong></td><td>Built-in, which is what you&#39;ll get anyway</td></tr></tbody></table></div>
+<h2 id="my-headset-sounds-thin-or-quiet-while-i-dictate"><a class="anchor" href="#my-headset-sounds-thin-or-quiet-while-i-dictate" aria-label="Link to this section">My headset sounds thin or quiet while I dictate</a></h2>
+<p>This is the most common surprise, and it is worth understanding because the fix
+is quick and the cause is not obvious.</p>
+<p><strong>What you notice:</strong> the moment you start dictating (or recording a meeting), the
+music, video, or call you are listening to gets quieter and thinner, losing its
+bass and fullness. The instant you stop, the rich sound comes back.</p>
+<p><strong>Why it happens:</strong> most headsets — Bluetooth earbuds, USB headsets, and combined
+&quot;headphones + microphone&quot; devices like a dock headset — are a single piece of
+hardware with both a speaker and a microphone. When any app opens that
+microphone, the headset switches its <strong>whole self</strong> into a &quot;communications&quot; or
+&quot;headset&quot; mode built for phone calls: mono, narrow, and quiet. It switches back
+to full, rich stereo the moment the microphone is released. Neato Echo is only
+turning the microphone on to hear you; the headset is the thing choosing to
+downgrade its own sound while the mic is in use.</p>
+<p>This is why it happens with plain dictation as well as meeting recording — both
+open the microphone — and why changing Windows sound settings does not stop it.
+It is the headset&#39;s own behavior, shared by nearly every combined headset, and
+no app can override it.</p>
+<p><strong>The fix: listen on one device, talk into another.</strong> Keep enjoying audio on the
+headset, but have Neato Echo listen to a <em>different</em> microphone so the headset&#39;s
+mic is never opened and its sound never downgrades.</p>
+<ol class="doc-steps">
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">1</span><h3 class="doc-step-title">Open the microphone setting</h3><div class="doc-step-body">
+
+<p><strong>Settings</strong>, then <strong>Preferences</strong>, then <strong>Input Device</strong>.</p>
+</div></li>
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">2</span><h3 class="doc-step-title">Pick a microphone that is not your headset</h3><div class="doc-step-body">
+
+<p>Choose your laptop&#39;s built-in microphone (marked <strong>(Built-in)</strong>, often named
+something like <em>Microphone Array</em>) instead of the headset. If you have a
+separate USB or desk microphone, that works too.</p>
+</div></li>
+
+
+<li class="doc-step"><span class="doc-step-num" aria-hidden="true">3</span><h3 class="doc-step-title">Check the level meter</h3><div class="doc-step-body">
+
+<p>Say a few words and watch the meter move, so you know the new microphone is
+the one being heard.</p>
+</div></li>
+
+
+</ol>
+
+
+<p>With the headset&#39;s microphone left alone, its speakers stay in full-quality
+stereo the entire time you dictate or record. The built-in microphone is also
+usually better for transcription anyway, for the reasons in the section above.</p>
+<aside class="callout callout-note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><div class="callout-body">
+
+<p><strong>Do not use System Default here.</strong> If your headset is the Windows default
+device, &quot;System Default&quot; will keep selecting the headset&#39;s microphone and the
+downgrade will keep happening. Pick the built-in microphone explicitly.</p>
+</div></aside>
+
+
+
+<aside class="callout callout-tip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M8.5 14.5A6 6 0 1 1 15.5 14.5c-.6.6-1 1.4-1 2.5h-5c0-1.1-.4-1.9-1-2.5z"/></svg><div class="callout-body">
+
+<p>Only affects what you <em>hear</em>, never what gets saved. The transcript and any
+recorded audio are made from the microphone and are unaffected by the
+headset&#39;s speaker downgrade — this is purely about your own listening
+experience while the mic is open.</p>
+</div></aside>
+
+
 <h2 id="if-no-microphones-are-listed"><a class="anchor" href="#if-no-microphones-are-listed" aria-label="Link to this section">If no microphones are listed</a></h2>
 <p>The app will say <em>&quot;No microphones were detected&quot;</em> and point you at Windows
 settings. That&#39;s a Windows-level problem rather than a Neato Echo one — see
@@ -142,7 +211,7 @@ mechanism entirely — see
         </section>
         </article>
       </main>
-<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#choosing-a-device">Choosing a device</a></li><li class="toc-2"><a href="#prefer-built-in-microphone">Prefer Built-in Microphone</a></li><li class="toc-2"><a href="#if-no-microphones-are-listed">If no microphones are listed</a></li><li class="toc-2"><a href="#meetings-use-the-same-input">Meetings use the same input</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
+<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#choosing-a-device">Choosing a device</a></li><li class="toc-2"><a href="#prefer-built-in-microphone">Prefer Built-in Microphone</a></li><li class="toc-2"><a href="#my-headset-sounds-thin-or-quiet-while-i-dictate">My headset sounds thin or quiet while I dictate</a></li><li class="toc-2"><a href="#if-no-microphones-are-listed">If no microphones are listed</a></li><li class="toc-2"><a href="#meetings-use-the-same-input">Meetings use the same input</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
     </div>
 
 

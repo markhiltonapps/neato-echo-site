@@ -62,6 +62,10 @@ Recording laws vary by country and state, and some require the consent of
 everyone on the call rather than just you. Neato Echo doesn't announce itself to
 other participants, so whether and how to tell them is your call to make.
 
+## Your headset may sound thinner while recording
+
+If the audio you are listening to drops in quality the moment a recording starts, that is your headset switching into call mode because Neato Echo opened its microphone. Have the app listen to a different microphone to avoid it — see [my headset sounds thin or quiet while I dictate](/help/customize/choose-your-microphone#my-headset-sounds-thin-or-quiet-while-i-dictate).
+
 ## Related
 
 * [Meeting audio isn't captured](/help/fix/meeting-audio-not-captured)
