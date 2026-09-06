@@ -81,6 +81,21 @@ dialog. It's kept alongside the built-in ones for next time.
 Summaries are written by the local language model you've downloaded in
 **Settings → Language Models**, so the transcript stays on your PC.
 
+## Come back to the summary anytime
+
+The summary you generate is **saved with the meeting**, so it's there whenever
+you reopen the note — you never have to regenerate it. Open a past meeting and
+it lands on its summary straight away, and a small row of tabs at the top of the
+note lets you switch between:
+
+- **Summary** — the enhanced summary you generated (shown first when one exists).
+- **Transcript** — the full, word-for-word transcript with speaker labels.
+- **Notes** — anything you typed yourself during or after the call.
+
+Run a different summary preset at any time from the note's actions and the new
+one replaces the saved summary. Any edits you make to the summary text are saved
+too, so a past meeting always reopens on exactly what you last left there.
+
 ## Where the note ends up
 
 Meeting notes are saved into your **Meetings** folder automatically. If the

@@ -42,6 +42,21 @@ Gemini, Groq and others), you can run cleanup on that provider instead. That
 sends the transcript to the provider under its terms, so keep it local if you
 dictate anything sensitive.
 
+## Polish the live preview
+
+When the floating **live preview** is on, it normally shows the raw
+speech-to-text as it streams — which can read rough (fragmented, little
+punctuation) next to the cleaned text that finally gets pasted. Turn on
+**Polish live preview** (**Settings → Transcription**, just under the
+live-preview switch) to close that gap: as you finish each sentence it's tidied
+by the same cleanup model described above, while the sentence you're still
+speaking stays raw so nothing lags behind your voice.
+
+It's **off by default**, and it only does anything when text cleanup is enabled
+and its model is reachable. If the model is slow or unavailable the preview
+simply stays raw — it never blocks or delays what actually gets pasted, and the
+final pasted text is the same either way.
+
 ## When cleanup fails
 
 If the cleanup step can't run, your dictation is **pasted anyway**, uncleaned,

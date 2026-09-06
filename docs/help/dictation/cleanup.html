@@ -109,6 +109,18 @@ little time before the paste, depending on your hardware.</p>
 Gemini, Groq and others), you can run cleanup on that provider instead. That
 sends the transcript to the provider under its terms, so keep it local if you
 dictate anything sensitive.</p>
+<h2 id="polish-the-live-preview"><a class="anchor" href="#polish-the-live-preview" aria-label="Link to this section">Polish the live preview</a></h2>
+<p>When the floating <strong>live preview</strong> is on, it normally shows the raw
+speech-to-text as it streams — which can read rough (fragmented, little
+punctuation) next to the cleaned text that finally gets pasted. Turn on
+<strong>Polish live preview</strong> (<strong>Settings → Transcription</strong>, just under the
+live-preview switch) to close that gap: as you finish each sentence it&#39;s tidied
+by the same cleanup model described above, while the sentence you&#39;re still
+speaking stays raw so nothing lags behind your voice.</p>
+<p>It&#39;s <strong>off by default</strong>, and it only does anything when text cleanup is enabled
+and its model is reachable. If the model is slow or unavailable the preview
+simply stays raw — it never blocks or delays what actually gets pasted, and the
+final pasted text is the same either way.</p>
 <h2 id="when-cleanup-fails"><a class="anchor" href="#when-cleanup-fails" aria-label="Link to this section">When cleanup fails</a></h2>
 <p>If the cleanup step can&#39;t run, your dictation is <strong>pasted anyway</strong>, uncleaned,
 with a note saying <em>&quot;Your dictation was pasted without AI cleanup.&quot;</em> You don&#39;t
@@ -136,7 +148,7 @@ no network.</p>
         </section>
         </article>
       </main>
-<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#what-it-changes">What it changes</a></li><li class="toc-2"><a href="#turning-it-on-or-off">Turning it on or off</a></li><li class="toc-2"><a href="#where-it-runs">Where it runs</a></li><li class="toc-2"><a href="#when-cleanup-fails">When cleanup fails</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
+<aside class="docs-toc" aria-labelledby="toc-title"><h3 id="toc-title">On this page</h3><ol><li class="toc-2"><a href="#what-it-changes">What it changes</a></li><li class="toc-2"><a href="#turning-it-on-or-off">Turning it on or off</a></li><li class="toc-2"><a href="#where-it-runs">Where it runs</a></li><li class="toc-2"><a href="#polish-the-live-preview">Polish the live preview</a></li><li class="toc-2"><a href="#when-cleanup-fails">When cleanup fails</a></li><li class="toc-2"><a href="#related">Related</a></li></ol></aside>
     </div>
 
 
