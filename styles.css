@@ -1173,7 +1173,7 @@ section {
   display: inline-block;
   width: 6px;
   height: 6px;
-  background: hsl(var(--burnt-orange));
+  background: hsl(var(--teal));
   transform: rotate(45deg);
   margin-right: 0.6rem;
   vertical-align: middle;
@@ -1283,7 +1283,7 @@ section {
   border-radius: 12px;
   overflow: hidden;
   background: hsl(var(--cream));
-  box-shadow: 10px 10px 0 hsl(17 40% 20% / 0.55);
+  box-shadow: 8px 8px 0 hsl(var(--foreground) / 0.45);
 }
 .wearable-lapel { display: block; width: 100%; height: auto; }
 .wearable-chip {
@@ -1297,7 +1297,7 @@ section {
   background: hsl(var(--cream));
   border: 2px solid hsl(var(--retro-brown));
   border-radius: 50%;
-  box-shadow: 5px 5px 0 hsl(17 40% 20% / 0.55);
+  box-shadow: 5px 5px 0 hsl(var(--foreground) / 0.45);
 }
 .wearable-chip img { width: 76%; height: 76%; object-fit: contain; }
 .wearable-rec {
